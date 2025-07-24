@@ -8,7 +8,7 @@ Hi! This is Yoko, Frontend Developer. Take a look at my recent work.
 
 ## Demo
 
-Deployed to Vercel, [here](https://yoko-portfolio.vercel.app)
+Deployed to Vercel, [here](https://yoko-portfolio-kappa.vercel.app/)
 
 ## Features
 
