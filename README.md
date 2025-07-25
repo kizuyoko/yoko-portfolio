@@ -1,6 +1,11 @@
 # Welcome to My Portfolio!
 
-Hi! This is Yoko, Frontend Developer. Take a look at my recent work.
+Hi! This is Yoko, a Frontend Developer.
+
+This portfolio is currently being rebuilt from scratch to reflect my recent growth in modern frontend technologies such as React, Next.js, and TypeScript.  
+You can still view my previous portfolio [here](https://portfolioyoko.vercel.app) to see how far I’ve come.
+
+Feel free to explore my updated work — and check back soon for further improvements!
 
 ## Screenshot
 
@@ -50,25 +55,4 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000)  in your browser to see the app running.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Otherwise, create Your Own From Scratch
-
-To build a similar setup manually, run:
-
-```bash
-npx create-next-app@latest nameOfYourApp --typescript
-```
-
-Then I got such quiestions and I answered Yes to the first 4, No to the last 2:
-
-```bash
-√ Would you like to use ESLint? ... No / Yes
-√ Would you like to use Tailwind CSS? ... No / Yes
-√ Would you like your code inside a `src/` directory? ... No / Yes
-√ Would you like to use App Router? (recommended) ... No / Yes
-√ Would you like to use Turbopack for `next dev`? ... No / Yes
-√ Would you like to customize the import alias (`@/*` by default)? ... No / Yes
-```
-
-Once installed, follow the generated README or use this one for guidance.
 
