@@ -3,6 +3,7 @@
 Hi! This is Yoko, a Frontend Developer.
 
 This portfolio is currently being rebuilt from scratch to reflect my recent growth in modern frontend technologies such as React, Next.js, and TypeScript.  
+
 You can still view my previous portfolio [here](https://portfolioyoko.vercel.app) to see how far I’ve come.
 
 Feel free to explore my updated work — and check back soon for further improvements!
@@ -17,6 +18,7 @@ Deployed to Vercel, [here](https://yoko-portfolio-kappa.vercel.app/)
 
 ## Features
 
+- Design with [Figma](https://www.figma.com/design/jawKCOfRFJjaRytr5RtJDm/Yoko-Portfolio?node-id=63-38&t=e8XsOdkiLwFETs5y-1)
 - React 18 / Next.js App Router
 - TypeScript support
 - TailwindCSS, including dark mode support
