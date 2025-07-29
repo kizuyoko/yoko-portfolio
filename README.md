@@ -8,6 +8,9 @@ You can still view my previous portfolio [here](https://portfolioyoko.vercel.app
 
 Feel free to explore my updated work — and check back soon for further improvements!
 
+This page is made by my [Boilerplate](https://boilerplate-react-nextjs-typescript.vercel.app/). Feel free to clone and use it!
+
+
 ## Screenshot
 
 ![Screenshot](./public/screenshot.png) 
