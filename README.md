@@ -48,13 +48,13 @@ Live on Vercel, [View Site](https://yoko-portfolio-kappa.vercel.app/)
 - **CI/CD**: GitHub Actions
 
 ## GitHub Branches
-- setup
-- layout
-- feature/home
-- feature/skills
-- feature/projects
-- feature/contact
-- enhancement/responsive
+- setup (Readme, enviroment, font, basic colors, favicon, 404) 
+- layout (header, footer, main)
+- feature/home 
+- feature/skills (list per cetegories, sub menu) 
+- feature/projects (detail pages)
+- feature/contact (contact form)
+- enhancement/responsive (hamburger menu)
 - theme/dark-mode
 
 ## Getting Started
@@ -62,8 +62,8 @@ Live on Vercel, [View Site](https://yoko-portfolio-kappa.vercel.app/)
 First, clone the repository:
 
 ```bash
-git clone https://github.com/kizuyoko/boilerplate-react-nextjs-typescript-tailwind.git
-cd boilerplate-react-nextjs-typescript-tailwind
+git clone https://github.com/kizuyoko/yoko-portfolio.git
+cd yoko-portfolio
 ```
 Then, install dependencies and start the development server:
 
@@ -80,6 +80,3 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000)  in your browser to see the app running.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
