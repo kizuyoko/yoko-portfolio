@@ -17,6 +17,7 @@ This site was created using my custom [boilerplate](https://boilerplate-react-ne
 - Project section with more detailed descriptions
 - More complex responsive design, now that the number of pages has increased
 - Documentation in README.md and feature branches per pages while development
+- Introduced better Git workflow by managing branches based on features and development stages.
 
 ## Screenshot
 

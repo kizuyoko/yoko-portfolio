@@ -3,6 +3,7 @@
 :root {
   --background: #E2E8F0; /* slate200 */
   --mainBackground: #ffffff; /* white */
+  --menuBackground: var(--background);
   --color-text: #364153; /* gray700 */
   --color-title: #101828; /* gray900 */
   --color-title-secondary: #3F3F47; /* zinc700 */
