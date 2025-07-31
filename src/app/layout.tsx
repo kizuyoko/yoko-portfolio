@@ -1,23 +1,30 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from 'next/font/google';
+import { DM_Sans, DM_Mono, Sora,  } from 'next/font/google';
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const inter = Inter({
+const dm_Sans = DM_Sans({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-sans',
+  weight: ['400'],
 });
 
-const playfair = Playfair_Display({
+const dm_Mono = DM_Mono({
   subsets: ['latin'],
-  variable: '--font-playfair',
-  weight: ['400', '700'], 
+  variable: '--font-mono',
+  weight: ['400', '500'],
+});
+
+const sora = Sora({
+  subsets: ['latin'],
+  variable: '--font-sora',
+  weight: ['600'],
 });
 
 export const metadata: Metadata = {
-  title: "Boilerplate React Next.js TypeScript TailwindCSS",
-  description: "Simple starter set of React.js, Next.js, TypeScript, and TailwindCSS",
+  title: "Yoko Portfolio",
+  description: "Showcasing my work with React.js, Next.js, Vue.jsTypeScript, and TailwindCSS",
 };
 
 export default function RootLayout({
@@ -26,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${dm_Sans.variable} ${dm_Mono.variable} ${sora.variable}`}>
       <body className="antialiased">
         <div className="grid items-center justify-items-center min-h-screen p-4 pb-20 gap-20 sm:p-20">
           <Header /> 

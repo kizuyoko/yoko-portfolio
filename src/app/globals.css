@@ -1,56 +1,79 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f0f4ff; /* blue300 */
+  --background: #E2E8F0; /* slate200 */
   --mainBackground: #ffffff; /* white */
-  --foreground: #171717; /* gray900 */
-  --font-text: var(--font-inter);
-  --font-title: var(--font-playfair);
+  --color-text: #364153; /* gray700 */
+  --color-title: #101828; /* gray900 */
+  --color-title-secondary: #3F3F47; /* zinc700 */
+  --color-text-button: #ffffff; /* white */
+  --color-text-menu: var(--color-text-title);
+  --color-button: #2B7FFF;  /* blue500 */
+  --color-link: var(--color-button);
+  --color-horizontal-line: #90A1B9; /* gray400 */
+  --color-title-underline: #FFCCD3; /* rose200 */
+  --color-submenu: #F8FAFC; /* slate50 */
+
+  --font-text: var(--font-sans);
+  --font-title: var(--font-sora);
+  --font-button: var(--font-mono);
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-color-text: var(--color-text);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #171717; /* gray700 */
     --mainBackground: #0a0a0a; /* gray800 */
-    --font-text: var(--font-inter);
-    --font-title: var(--font-playfair);
-    --foreground: #f0f4ff; /* blue300 */
+    --color-text: #ffffff; /* white */
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-text), sans-serif;
-}
+  color: var(--color-text);
+  font-family: var(--font-text), serif;
+  font-size: 16px;
+  line-height: 1.4;
+} 
 
 main {
   background: var(--mainBackground);
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family:  var(--font-title), serif;
-  @apply text-3xl font-bold text-purple-700 text-center
 }
 
-p {
-  @apply text-center
+h1 {
+  color: var(--color-title);
+  border-bottom: 4px solid var(--color-title-underline);
+  @apply font-semibold text-4xl text-shadow-2xs pb-1;
 }
 
-.text-link {
-  @apply hover:underline text-sky-800 font-semibold text-lg
+h2, h3 {
+  color: var(--color-title-secondary);
+  @apply font-semibold text-2xl;
 }
 
-.image-link {
-  @apply transform transition-transform duration-100 hover:rotate-45
+button, .button {
+  font-family: var(--font-button), monospace;
+  background-color: var(--color-button);
+  color: var(--color-text-button);
+  @apply font-medium text-xl px-6 py-2 rounded-4xl transition-colors duration-300;
 }
 
-.button {
-  @apply rounded-full border border-solid font-semibold border-transparent transition-colors px-4 py-2 bg-sky-900 text-white hover:bg-sky-800 hover:shadow mt-6
+.menu {
+  background-color: var(--color-background);
+  @apply shadow-lg;
 }
+.menu-item {
+  color: var(--color-text-menu);
+  @apply text-2xl;
+}
+
+
 
