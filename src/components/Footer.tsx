@@ -1,4 +1,4 @@
-import { FooterItem } from "@/components/ui/footerItem";
+import { FooterItem } from "@/components/ui/FooterItem";
 
 export const Footer = () => {
   return (
