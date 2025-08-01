@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FooterItem } from "@/components/ui/footerItem";
 
 export const Footer = () => {
