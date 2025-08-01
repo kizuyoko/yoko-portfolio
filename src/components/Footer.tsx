@@ -1,39 +1,25 @@
 import Image from "next/image";
+import { FooterItem } from "@/components/ui/footerItem";
 
 export const Footer = () => {
   return (
-    <footer className="row-start-3 flex gap-4 flex-wrap items-center justify-center">
-      <a
-        className="image-link"
-        href="https://github.com/kizuyoko/boilerplate-react-nextjs-typescript-tailwind/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="GitHub Repository"
-      >
-        <Image
-          aria-hidden
-          src="/github.svg"
-          alt="GitHub"
-          width={30}
-          height={30}
-        /> 
-        
-      </a> 
-      <a
-        className="image-link"
+    <footer className="flex gap-3 flex-wrap items-center justify-center">
+      <FooterItem
+        href="https://github.com/kizuyoko/yoko-portfolio"
+        src="/github.svg"
+        alt="GitHub"
+        ariaLabel="GitHub Repository"
+        width={36}
+        height={36}
+      />
+      <FooterItem
         href="https://www.linkedin.com/in/kizuyoko/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn Profile"
-      >
-        <Image
-          aria-hidden
-          src="/linkedin.svg"
-          alt="LinkedIn"
-          width={30}
-          height={30}
-        /> 
-      </a>
+        src="/linkedin.svg"
+        alt="LinkedIn"
+        ariaLabel="LinkedIn Profile"
+        width={36}
+        height={36}
+      />
     </footer>
   );
-}
+} 

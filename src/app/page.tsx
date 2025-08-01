@@ -7,7 +7,7 @@ export default function Home() {
       role="main"
       aria-label="Main content of the homepage"
     >
-      <h1>Welcome to my Portfolio!</h1>
+      <h1>Welcome to My Portfolio!</h1>
       <p>But sorry, it is not ready yet.</p>
       <Button
         href="/about"
