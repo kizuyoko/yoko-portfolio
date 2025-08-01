@@ -1,9 +1,8 @@
-import Image from "next/image";
-import { FooterItem } from "@/components/ui/footerItem";
+import { FooterItem } from "@/components/ui/FooterItem";
 
 export const Footer = () => {
   return (
-    <footer className="flex gap-3 flex-wrap items-center justify-center">
+    <footer className="flex flex-wrap items-center justify-center gap-3 p-4">
       <FooterItem
         href="https://github.com/kizuyoko/yoko-portfolio"
         src="/github.svg"

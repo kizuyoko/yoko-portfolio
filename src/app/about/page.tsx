@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import { DefaultLayout } from "@/components/DefaultLayout";
 
 export const metadata = {
   title: "About - Boilerplate",
@@ -7,15 +8,17 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-4 items-center justify-center p-4 sm:p-8 shadow">
-      <h1>About</h1>
-      <p>This is About Page.</p>
-      <Button
-        href="/"
-        ariaLabel="Go back to Home page"
-      >
-        Home
-      </Button>
-    </main>
+    <DefaultLayout>
+      <main className="flex flex-col items-center flex-1 gap-4 p-4 sm:p-8">
+        <h1>About</h1>
+        <p>This is About Page.</p>
+        <Button
+          href="/"
+          ariaLabel="Go back to Home page"
+        >
+          Home
+        </Button>
+      </main>
+    </DefaultLayout>
   );
 }

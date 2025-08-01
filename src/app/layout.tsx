@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Mono, Sora,  } from 'next/font/google';
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 
 const dm_Sans = DM_Sans({
   subsets: ['latin'],
@@ -42,11 +40,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
       </head>
       <body className="antialiased">
-        <div className="grid items-center justify-items-center min-h-screen p-4 pb-20 gap-20 sm:p-20">
-          <Header /> 
-          {children}
-          <Footer />
-        </div>
+        {children}
       </body>
     </html>
   );
