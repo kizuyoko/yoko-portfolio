@@ -7,7 +7,7 @@ type skillItemProps = {
   icon?: string;
 };
 
-export const SkillItem = ({ name, home, category, icon }: skillItemProps) => {
+export const SkillItem = ({ name, home, icon }: skillItemProps) => {
   return (
     <>
       {home ? (
