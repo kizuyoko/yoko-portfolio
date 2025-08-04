@@ -10,10 +10,10 @@ export default function Home() {
       </Title>
       <p>But sorry, it is not ready yet.</p>
       <Button
-        href="/about"
-        ariaLabel="Go to About page for site details"
+        href="/skills"
+        ariaLabel="Go to Skills page for site details"
       >
-        About
+        Skills
       </Button>
     </HomeLayout>
   );
