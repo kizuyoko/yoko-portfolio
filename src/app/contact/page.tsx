@@ -1,24 +1,28 @@
 import { Button } from "@/components/ui/Button";
 import { DefaultLayout } from "@/components/DefaultLayout";
+import { Title } from "@/components/ui/Title";
 
 export const metadata = {
-  title: "About - Boilerplate",
-  description: "Learn more about this boilerplate project.",
+  title: "Contact - Yoko's Portfolio",
+  description: "Get in touch with me.",
 };
 
 export default function Home() {
   return (
     <DefaultLayout>
-      <main className="flex flex-col items-center flex-1 gap-4 p-4 sm:p-8">
-        <h1>About</h1>
-        <p>This is About Page.</p>
+      <aside className="">&nbsp;</aside>
+      <section className="flex flex-col items-start flex-1">
+        <Title>
+          Contact
+        </Title>
+        <p>This is Contact Page.</p>
         <Button
           href="/"
           ariaLabel="Go back to Home page"
         >
           Home
         </Button>
-      </main>
+      </section>
     </DefaultLayout>
   );
 }

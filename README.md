@@ -34,6 +34,7 @@ Live on Vercel, [View Site](https://yoko-portfolio-kappa.vercel.app/)
 - Written in TypeScript
 - Tailwind CSS setup with responsive and dark mode support
 - Dynamic site settings stored in `src/app/constants/site.ts`
+- Two layouts: Centered layout for homepage and 404. Two-column layout with header and right-side menu for other pages.
 - Custom 404 page
 - Dark mode
 - SEO-ready with sitemap.xml and robots.txt

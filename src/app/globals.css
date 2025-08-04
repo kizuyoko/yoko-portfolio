@@ -51,7 +51,6 @@ h1, h2, h3 {
 
 h1 {
   color: var(--color-title);
-  border-bottom: 4px solid var(--color-title-underline);
   @apply font-semibold text-4xl text-shadow-2xs pb-1;
 }
 
@@ -64,20 +63,15 @@ button, .button {
   font-family: var(--font-button), monospace;
   background-color: var(--color-button);
   color: var(--color-text-button);
-  @apply font-medium text-xl px-6 py-2 rounded-4xl transition-colors duration-300;
+  @apply font-medium text-xl px-6 py-2 mt-2 rounded-4xl transition-colors duration-300;
 }
 .homeLayout header {
   @apply sm:hidden;
 }
 .homeLayout h1 {
-  @apply border-0 pb-4 text-center;
-  position: relative;
+  @apply pb-4 text-center;
 }
-.homeLayout h1::after {
-  content: "";
-  @apply block w-30 h-1 bg-[var(--color-title-underline)] absolute left-1/2 -bottom-2.5;
-  transform: translateX(-50%);
-}
+
 .homeLayout p {
   @apply text-center;
 }
@@ -89,6 +83,9 @@ button, .button {
   color: var(--color-text-menu);
   @apply text-2xl;
 }
+
+
+
 
 
 
