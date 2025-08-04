@@ -24,6 +24,7 @@ export const FooterItem = ({ href, src, alt, ariaLabel, width, height }: FooterI
       alt={alt}
       width={width}
       height={height}
+      className="dark:invert"
       />
     </a>
   );

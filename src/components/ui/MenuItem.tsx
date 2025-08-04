@@ -30,7 +30,7 @@ export const MenuItem = ({ href, src, name, ariaLabel, width, height }: MenuItem
         alt={name}
         width={width}
         height={height}
-        className="transition-transform duration-200 group-hover:scale-110"
+        className="transition-transform duration-200 group-hover:scale-110 dark:invert"
       />
       <span className={`transition-transform duration-200 group-hover:translate-x-1 ${isActive ? 'border-b' : ''}`}>{name}</span>
     </Link>

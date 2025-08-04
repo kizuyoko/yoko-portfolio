@@ -32,6 +32,8 @@
     --background: #171717; /* gray700 */
     --mainBackground: #0a0a0a; /* gray800 */
     --color-text: #ffffff; /* white */
+    --color-title: #ffffff; /* white */
+    --color-title-secondary: #d1d5db; /* gray300 */
   }
 }
 

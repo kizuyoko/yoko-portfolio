@@ -9,6 +9,7 @@ export const Logo = ({ className }: { className?: string }) => {
         alt="Y"
         width={22}
         height={22}
+        className="dark:invert"
       />
     </Link>
   );

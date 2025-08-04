@@ -25,11 +25,11 @@ export default function Home() {
     
       <p>Hello, I&apos;m Yoko — a Frontend developer with nine years of experience, now focused on modern technologies like React, Vue, Next.js, and TypeScript.</p>
       <p className="py-4">I enjoy working closely with designers and backend engineers, and I thrive in agile environments where collaboration and balance are key.</p>
-      <div className="flex flex-col items-center justify-center gap-4 mt-6 sm:flex-row ">
+      <div className="flex flex-col items-center justify-center w-full gap-4 mt-6 sm:flex-row">
         {siteConfig.nav
           .filter(item => item.href !== "/")
           .map(({ name, href }) => (
-            <Button key={href} href={href} ariaLabel={`Go to ${name} page`}>
+            <Button key={href} href={href} ariaLabel={`Go to ${name} page`} className="w-full sm:w-auto">
               {name}
             </Button>
           ))}
