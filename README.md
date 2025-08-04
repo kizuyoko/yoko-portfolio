@@ -52,7 +52,7 @@ Live on Vercel, [View Site](https://yoko-portfolio-kappa.vercel.app/)
 ## GitHub Branches
 - setup (Readme, enviroment, font, basic colors, favicon, 404) 
 - layout (header, footer, main)
-- feature/home 
+- feature/home (home, 404)
 - feature/skills (list per cetegories, sub menu) 
 - feature/projects (detail pages)
 - feature/contact (contact form)

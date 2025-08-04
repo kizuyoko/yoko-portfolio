@@ -1,6 +1,7 @@
 export type Skill = {
   id: number;
   category: string;
-  items: string[];
+  name: string;
   image?: string;
+  home?: number;
 };
