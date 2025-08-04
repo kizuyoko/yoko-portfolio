@@ -22,7 +22,7 @@ export const Button = ({
     return (
       <Link 
         href={href} 
-        className={`button ${className}`}
+        className={`button text-center ${className}`}
         aria-label={ariaLabel}
       >
         {children}
