@@ -40,47 +40,81 @@ export const skills: Skill[] = [
     category: "JavaScript",
     name: "Node.js",
     image: "/skills/nodejs.svg",
-  }, {
+   }, {
     id: 8,
-    category: "CSS",
+    category: "HTML/CSS",
+    name: "HTML5",
+    image: "/skills/html5.svg",
+   }, {
+    id: 9,
+    category: "HTML/CSS",
+    name: "CSS3",
+    image: "/skills/css3.svg",
+  }, {
+    id: 10,
+    category: "HTML/CSS",
     name: "TailwindCSS",
     image: "/skills/tailwindcss.svg",
     home: 5,
   }, {
-    id: 9,
-    category: "CSS",
-    name: "Sass",
-    image: "/skills/sass.svg",
-  }, {
-    id: 10,
-    category: "CSS",
-    name: "Styled Components",
-    image: "/skills/styled-components.svg",
-  }, {
     id: 11,
-    category: "Testing",
-    name: "Jest",
-    image: "/skills/jest.svg",
+    category: "HTML/CSS",
+    name: "Bootstrap",
+    image: "/skills/bootstrap.svg",
   }, {
     id: 12,
-    category: "Testing",
-    name: "Cypress",
-    image: "/skills/cypress.svg",
+    category: "HTML/CSS",
+    name: "SASS",
+    image: "/skills/sass.svg",
   }, {
-    id: 13,
-    category: "Version Control",
-    name: "Git",
-    image: "/skills/git.svg",
-  }, {
-    id: 14,
-    category: "Design Tools",
+    id: 15,
+    category: "UX/UI Design & Component Libraries",
     name: "Figma",
     image: "/skills/figma.svg",
   }, {
-    id: 15,
-    category: "Design Tools",
+    id: 16,
+    category: "UX/UI Design & Component Libraries",
+    name: "InVision",
+    image: "/skills/invision.svg",
+  }, {
+    id: 17,
+    category: "UX/UI Design & Component Libraries",
+    name: "Photoshop",
+    image: "/skills/photoshop.svg",
+  }, {
+    id: 18,
+    category: "UX/UI Design & Component Libraries",
+    name: "Storybook",
+    image: "/skills/storybook.svg",
+  }, {
+    id: 19,
+    category: "UX/UI Design & Component Libraries",
     name: "Adobe XD",
-    image: "/skills/xd.svg",
+    image: "/skills/adobexd.svg",
+  }, {
+    id: 20,
+    category: "Deployment",
+    name: "Vercel",
+    image: "/skills/vercel.svg",
+  }, {
+    id: 21,
+    category: "Deployment",
+    name: "Netlify",
+    image: "/skills/netlify.svg",
+  }, {
+    id: 22,
+    category: "Deployment",
+    name: "Firebase",
+    image: "/skills/firebase.svg",
+  }, {
+    id: 23,
+    category: "Version Control, CI/CD",
+    name: "GitHub",
+    image: "/skills/github.svg",
+  }, {
+    id: 24,
+    category: "Version Control, CI/CD",
+    name: "GitLab",
+    image: "/skills/gitlab.svg",
   }
-
 ];
