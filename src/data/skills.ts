@@ -109,10 +109,7 @@ export const skills: Skill[] = [
   }, {
     category: "API",
     name: "Axios",
-  }, {
-    category: "API",
-    name: "HTTP Requests",
-  }, {
+  },  {
     category: "Testing",
     name: "Jest",
   }, {
