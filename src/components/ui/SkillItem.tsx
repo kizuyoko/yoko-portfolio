@@ -23,7 +23,19 @@ export const SkillItem = ({ name, home, icon }: skillItemProps) => {
           />
         ) : null
       ) : (
-        <span className="font-semibold">{name}</span>
+        icon ? (
+          <Image 
+            src={icon} 
+            alt={name} 
+            width={48} 
+            height={48} 
+            className="inline-block"
+            aria-label={`Skill icon for ${name}`}
+            role="img"
+          />
+        ) : (
+          <span className="font-semibold">{name}</span>
+        )
       )}
     </>
   );

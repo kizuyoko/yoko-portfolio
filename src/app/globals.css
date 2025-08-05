@@ -15,7 +15,7 @@
   --color-link: var(--color-button);
   --color-horizontal-line: #90A1B9; /* gray400 */
   --color-title-underline: #FFCCD3; /* rose200 */
-  --color-submenu: #F8FAFC; /* slate50 */
+  --color-submenu: #F1F5F9; /* slate100 */
 
   --font-text: var(--font-sans);
   --font-title: var(--font-sora);
@@ -87,6 +87,12 @@ button, .button {
 .menu-item {
   color: var(--color-text-menu);
   @apply text-2xl;
+}
+
+.sub-menu {
+  background: var(--color-submenu);
+  color: var(--color-text);
+  @apply p-4 shadow-md;
 }
 
 

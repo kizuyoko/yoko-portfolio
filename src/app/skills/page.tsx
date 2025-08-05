@@ -1,6 +1,7 @@
-import { Button } from "@/components/ui/Button";
 import { DefaultLayout } from "@/components/DefaultLayout";
 import { Title } from "@/components/ui/Title";
+import { SkillItem } from "@/components/ui/SkillItem";
+import { skills } from "@/data/skills";
 
 export const metadata = {
   title: "Skills - Yoko's Portfolio",
@@ -8,20 +9,42 @@ export const metadata = {
 };
 
 export default function Home() {
+  // Group skills by category
+  const categories = [...new Set(skills.map(skill => skill.category))];
+  const skillsByCategory = categories.map(category => ({
+    category,
+    skills: skills.filter(skill => skill.category === category)
+  }));
+
   return (
     <DefaultLayout>
-      <aside className="">Sub Menu</aside>
+      <aside className="sub-menu">
+        <ul>
+          {categories.map(category => (
+            <li key={category}>
+              <a href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}>{category}</a>
+            </li>
+          ))}
+        </ul>
+      </aside>
       <section className="flex flex-col items-start flex-1">
         <Title>
           Skills
         </Title>
-        <p>This is Skills Page.</p>
-        <Button
-          href="/"
-          ariaLabel="Go back to Home page"
-        >
-          Home
-        </Button>
+        <div className="w-full mt-6 space-y-8">
+          {skillsByCategory.map(({ category, skills }) => (
+            <div key={category} id={category.toLowerCase().replace(/\s+/g, '-')} className="w-full">
+              <h2 className="text-xl font-bold mb-3">{category}</h2>
+              <ul className="flex flex-wrap gap-4">
+                {skills.map(skill => (
+                  <li key={skill.id}>
+                    <SkillItem name={skill.name} icon={skill.image} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </section>
     </DefaultLayout>
   );
