@@ -116,5 +116,14 @@ export const skills: Skill[] = [
     category: "Version Control, CI/CD",
     name: "GitLab",
     image: "/skills/gitlab.svg",
+  }, {
+    id: 25,
+    category: "API",
+    name: "REST API",
+
+  }, {
+    id: 26,
+    category: "API",
+    name: "HTTP Requests",
   }
 ];

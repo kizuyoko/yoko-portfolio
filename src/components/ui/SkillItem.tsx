@@ -24,17 +24,21 @@ export const SkillItem = ({ name, home, icon }: skillItemProps) => {
         ) : null
       ) : (
         icon ? (
-          <Image 
-            src={icon} 
-            alt={name} 
-            width={48} 
-            height={48} 
-            className="inline-block"
-            aria-label={`Skill icon for ${name}`}
-            role="img"
-          />
+          <div className="flex flex-col items-center gap-1 mr-3">
+            <Image 
+              src={icon} 
+              alt={name} 
+              width={38} 
+              height={38}  
+              className="inline-block"
+              aria-label={`Skill icon for ${name}`}
+              role="img"
+            />
+            <span className="text-sm">{name}</span>
+          </div>
+           
         ) : (
-          <span className="font-semibold">{name}</span>
+            <span className="text-sm bg-[var(--color-skill-item)] px-4 py-1 rounded">{name}</span>
         )
       )}
     </>
