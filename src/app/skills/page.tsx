@@ -18,12 +18,15 @@ export default function Home() {
 
   return (
     <DefaultLayout>
-      <aside className="sub-menu">
+      <aside className="sub-menu sm:fixed sm:top-24 sm:right-8">
         <ul>
           {categories.map(category => (
-            <li key={category}>
-              <a href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}>{category}</a>
-            </li>
+          <li 
+            key={category}
+            className="mb-4 text-xl font-medium hover:underline"
+          >
+            <a href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}>{category}</a>
+          </li>
           ))}
         </ul>
       </aside>
@@ -34,8 +37,10 @@ export default function Home() {
         <div className="w-full mt-6 space-y-8">
           {skillsByCategory.map(({ category, skills }) => (
             <div key={category} id={category.toLowerCase().replace(/\s+/g, '-')} className="w-full">
-              <h2 className="text-xl font-bold mb-3">{category}</h2>
-              <ul className="flex flex-wrap gap-4">
+              <h2
+                id={`${category.toLowerCase().replace(/\s+/g, '-')}`}
+              >{category}</h2>
+              <ul className="flex flex-wrap gap-2">
                 {skills.map(skill => (
                   <li key={skill.id}>
                     <SkillItem name={skill.name} icon={skill.image} />
