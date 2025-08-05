@@ -2,6 +2,7 @@ import { DefaultLayout } from "@/components/DefaultLayout";
 import { Title } from "@/components/ui/Title";
 import { SkillItem } from "@/components/ui/SkillItem";
 import { skills } from "@/data/skills";
+import { SubMenu } from "@/components/ui/SubMenu";
 
 export const metadata = {
   title: "Skills - Yoko's Portfolio",
@@ -18,20 +19,18 @@ export default function Home() {
 
   return (
     <DefaultLayout>
-      <aside className="sm:sticky sm:right-0 sm:max-w-1/4 sm:mr-8 sm:mt-8">
-        <div className="sub-menu sm:sticky sm:top-8">
-          <ul>
-            {categories.map(category => (
-            <li 
-              key={category}
-              className="mb-4 text-xl font-medium hover:underline"
-            >
-              <a href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}>{category}</a>
-            </li>
-            ))}
-          </ul>
-        </div>
-      </aside>
+      <SubMenu>
+        <ul>
+          {categories.map(category => (
+          <li 
+            key={category}
+            className="mb-4 text-xl font-medium hover:underline"
+          >
+            <a href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}>{category}</a>
+          </li>
+          ))}
+        </ul>
+      </SubMenu>
       <section className="flex flex-col items-start flex-1 sm:m-8 m-4">
         <Title>
           Skills
