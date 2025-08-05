@@ -24,7 +24,7 @@ export const SkillItem = ({ name, home, icon }: skillItemProps) => {
         ) : null
       ) : (
         icon ? (
-          <div className="flex flex-col items-center gap-1 mr-3">
+          <div className="flex flex-col items-center gap-1 mr-3 mb-1">
             <Image 
               src={icon} 
               alt={name} 
@@ -38,7 +38,7 @@ export const SkillItem = ({ name, home, icon }: skillItemProps) => {
           </div>
            
         ) : (
-            <span className="text-sm bg-[var(--color-skill-item)] px-4 py-1 rounded">{name}</span>
+            <span className="text-sm bg-[var(--color-skill-item)] px-4 py-1 rounded mb-4">{name}</span>
         )
       )}
     </>

@@ -93,7 +93,7 @@ button, .button {
 .sub-menu {
   background: var(--color-submenu);
   color: var(--color-text);
-  @apply p-4 shadow-md;
+  @apply p-4 shadow-md w-full;
 }
 
 

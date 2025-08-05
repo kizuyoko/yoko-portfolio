@@ -8,7 +8,7 @@ export const HomeLayout = ({ children }: { children: React.ReactNode }) => {
       <div className="hidden sm:block"></div>
       <div className="flex items-center justify-center p-4 bg-[var(--mainBackground)] sm:p-8 sm:bg-transparent">
         <main 
-          className="flex flex-col items-center justify-center max-w-3xl p-4 sm:shadow sm:p-16" 
+          className="flex flex-col items-center justify-center max-w-3xl p-0 sm:shadow sm:p-16" 
           role-main="true"
           aria-label="Main content"
         >
