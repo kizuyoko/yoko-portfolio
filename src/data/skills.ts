@@ -2,88 +2,116 @@ import { Skill } from "@/types/skill";
 
 export const skills: Skill[] = [
   {
-    category: "JavaScript",
+    category: "Frontend Development",
     name: "JavaScript",
     image: "/skills/javascript.svg",
   }, {
-    category: "JavaScript",
-    name: "React.js",
-    image: "/skills/reactjs.svg",
-    home: 1,
-  }, {
-    category: "JavaScript",
-    name: "Vue.js",
-    image: "/skills/vuejs.svg",
-    home: 2,
-  }, {
-    category: "JavaScript",
+    category: "Frontend Development",
     name: "TypeScript",
     image: "/skills/typescript.svg",
     home: 3,
   }, {
-    category: "JavaScript",
+    category: "Frontend Development",
+    name: "React.js",
+    image: "/skills/reactjs.svg",
+    home: 1,
+  }, {
+    category: "Frontend Development",
     name: "Next.js",
     image: "/skills/nextjs.svg",
     home: 4,
   }, {
-    category: "JavaScript",
+    category: "Frontend Development",
+    name: "Vue.js",
+    image: "/skills/vuejs.svg",
+    home: 2,
+  }, {
+    category: "Frontend Development",
     name: "Nuxt.js",
     image: "/skills/nuxtjs.svg",
   }, {
-    category: "JavaScript",
+    category: "Frontend Development",
     name: "Node.js",
     image: "/skills/nodejs.svg",
-   }, {
-    category: "HTML/CSS",
+   },  {
+    category: "Styling & UI",
     name: "HTML5",
     image: "/skills/html5.svg",
    }, {
-    category: "HTML/CSS",
+    category: "Styling & UI",
     name: "CSS3",
     image: "/skills/css3.svg",
   }, {
-    category: "HTML/CSS",
+    category: "Styling & UI",
     name: "TailwindCSS",
     image: "/skills/tailwindcss.svg",
     home: 5,
   }, {
-    category: "HTML/CSS",
+    category: "Styling & UI",
     name: "Bootstrap",
     image: "/skills/bootstrap.svg",
   }, {
-    category: "HTML/CSS",
+    category: "Styling & UI",
     name: "SASS",
     image: "/skills/sass.svg",
   }, {
-    category: "UX/UI Design & Component Libraries",
-    name: "Figma",
-    image: "/skills/figma.svg",
+    category: "Testing",
+    name: "Jest",
+    image: "/skills/jest.svg",
   }, {
-    category: "UX/UI Design & Component Libraries",
-    name: "Storybook",
-    image: "/skills/storybook.svg",
-  },{
-    category: "UX/UI Design & Component Libraries",
-    name: "InVision",
-    image: "/skills/invision.svg",
+    category: "Testing",  
+    name: "Cypress",
+    image: "/skills/cypress.svg",
   }, {
-    category: "UX/UI Design & Component Libraries",
-    name: "Photoshop",
-    image: "/skills/photoshop.svg",
+    category: "Testing",
+    name: "Testing Library",
+    image: "/skills/testing-library.svg",
+  }, {
+    category: "Testing",
+    name: "Postman",
+    image: "/skills/postman.svg",
+  }, {
+    category: "API & Data Fetching",
+    name: "REST API",
+    image: "/skills/rest-api.svg",
+  }, {
+    category: "API & Data Fetching",
+    name: "HTTP Requests",
+    image: "/skills/http.svg",
   },  {
-    category: "UX/UI Design & Component Libraries",
-    name: "Adobe XD",
-    image: "/skills/adobexd.svg",
+    category: "API & Data Fetching",
+    name: "Fetch API",
+    image: "/skills/fetch-api.svg",
+  }, { 
+    category: "API & Data Fetching",
+    name: "TanStack Query",
+    image: "/skills/tanstack-query.svg",
   }, {
-    category: "Deployment",
+    category: "API & Data Fetching",
+    name: "Axios",
+    image: "/skills/axios.svg",
+  }, {
+    category: "API & Data Fetching",
+    name: "JSON",
+    image: "/skills/json.svg",
+  }, {  
+    category: "Performance & Accessibility",
+    name: "Lighthouse",
+    image: "/skills/lighthouse.svg",
+  }, {
+    category: "Performance & Accessibility",
+    name: "Wave",
+    image: "/skills/wave.svg",
+  }, {
+    category: "Deployment & Hosting",
     name: "Vercel",
     image: "/skills/vercel.svg",
   }, {
-    category: "Deployment",
+    category: "Deployment & Hosting",
     name: "Netlify",
     image: "/skills/netlify.svg",
   }, {
-    category: "Deployment",
+    category: "Deployment & Hosting",
     name: "Firebase",
     image: "/skills/firebase.svg",
   }, {
@@ -97,70 +125,72 @@ export const skills: Skill[] = [
   }, {
     category: "Version Control, CI/CD",
     name: "Bitbucket",
+    image: "/skills/bitbucket.svg",
   }, {
-    category: "API",
-    name: "REST API",
+    category: "Design & Prototyping",
+    name: "Figma",
+    image: "/skills/figma.svg",
   }, {
-    category: "API",
-    name: "HTTP Requests",
+    category: "Design & Prototyping",
+    name: "Storybook",
+    image: "/skills/storybook.svg",
+  },{
+    category: "Design & Prototyping",
+    name: "InVision",
+    image: "/skills/invision.svg",
+  }, {
+    category: "Design & Prototyping",
+    name: "Photoshop",
+    image: "/skills/photoshop.svg",
   },  {
-    category: "API",
-    name: "TanStack Query",
-  }, {
-    category: "API",
-    name: "Axios",
+    category: "Design & Prototyping",
+    name: "Adobe XD",
+    image: "/skills/adobexd.svg",
   },  {
-    category: "Testing",
-    name: "Jest",
+    category: "Development Tools",
+    name: "npm",
+    image: "/skills/npm.svg",
   }, {
-    category: "Testing",
-    name: "React Testing Library",
+    category: "Development Tools",
+    name: "Vite",
+    image: "/skills/vite.svg",
   }, {
-    category: "Testing",  
-    name: "Cypress",
+    category: "Development Tools",
+    name: "Webpack",
+    image: "/skills/webpack.svg",
   }, {
-    category: "SEO & Performance",
-    name: "Lighthouse",
+    category: "AI & Automation",
+    name: "ChatGPT",
+    image: "/skills/chatgpt.svg",
   }, {
-    category: "SEO & Performance",
-    name: "Wave",
-  }, {  
+    category: "AI & Automation",
+    name: "GitHub Copilot",
+    image: "/skills/github-copilot.svg",
+  }, {
+    category: "AI & Automation",
+    name: "Gemini",
+    image: "/skills/gemini.svg",
+  }, {
+    category: "AI & Automation",
+    name: "Cursor",
+    image: "/skills/cursor.svg",
+  }, {
+    category: "AI & Automation",
+    name: "VS Code",
+    image: "/skills/vscode.svg",
+  }, {
     category: "CMS & CRM",
     name: "Adobe Campaign",
+    image: "/skills/adobe-campaign.svg",
   },
   {
     category: "CMS & CRM",
     name: "Salesforce",
+    image: "/skills/salesforce.svg",
   }, {
     category: "CMS & CRM",
     name: "WordPress",
-  }, {
-    category: "Tools & Automation",
-    name: "npm",
-  }, {
-    category: "Tools & Automation",
-    name: "Vite",
-  }, {
-    category: "Tools & Automation",
-    name: "Webpack",
-  }, {
-    category: "Tools & Automation",
-    name: "Postman",
-  }, {
-    category: "Tools & Automation",
-    name: "ChatGPT",
-  }, {
-    category: "Tools & Automation",
-    name: "GitHub Copilot",
-  }, {
-    category: "Tools & Automation",
-    name: "Gemini",
-  }, {
-    category: "Tools & Automation",
-    name: "Cursor",
-  }, {
-    category: "Tools & Automation",
-    name: "VS Code",
+    image: "/skills/wordpress.svg",
   }, {
     category: "Agile Methodologies",
     name: "Scrum",
