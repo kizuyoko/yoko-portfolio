@@ -24,7 +24,7 @@ export const SkillItem = ({ name, home, icon }: skillItemProps) => {
         ) : null
       ) : (
         icon ? (
-          <div className="flex flex-col items-center gap-1 mr-3 mb-1">
+          <div className="flex flex-col items-center gap-1 mb-1 mr-3 max-w-16">
             <Image 
               src={icon} 
               alt={name} 
@@ -34,7 +34,7 @@ export const SkillItem = ({ name, home, icon }: skillItemProps) => {
               aria-label={`Skill icon for ${name}`}
               role="img"
             />
-            <span className="text-sm">{name}</span>
+            <span className="text-sm text-center">{name}</span>
           </div>
            
         ) : (
