@@ -38,7 +38,7 @@ export const SkillItem = ({ name, home, icon }: skillItemProps) => {
           </div>
            
         ) : (
-            <span className="text-sm bg-[var(--color-skill-item)] px-4 py-1 rounded mb-4">{name}</span>
+            <span className="font-semibold bg-[var(--color-skill-item)] px-4 py-1 rounded mb-4">{name}</span>
         )
       )}
     </>
