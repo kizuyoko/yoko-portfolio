@@ -1,9 +1,12 @@
+'use client';
+
 import { Button } from "@/components/ui/Button";
 import { HomeLayout } from "@/components/HomeLayout";
 import { Title } from "@/components/ui/Title";
 import { SkillItem } from "@/components/ui/SkillItem";
 import { skills } from "@/data/skills";
 import { siteConfig } from "@/app/constants/site";
+import { useEffect, useState } from "react";
 
 const homeSkills = skills
   .filter(skill => skill.home)
@@ -11,8 +14,18 @@ const homeSkills = skills
   .slice(0, 5); // Limit to 5 skills for the home page
 
 export default function Home() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 1000);
+  }, []);
+
   return (
-    <HomeLayout>
+    <HomeLayout className={`transition-all duration-700 ease-out transform ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+      }`}>
       <Title homeLayout>
         Welcome to <br className="sm:hidden" />My Portfolio!
       </Title>
