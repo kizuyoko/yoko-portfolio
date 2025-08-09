@@ -9,7 +9,7 @@
   --color-title-secondary: #3F3F47; /* zinc700 */
   --color-text-button: #ffffff; /* white */
   --color-text-menu: var(--color-text-title);
-  --color-button: #2B7FFF;  /* blue500 */
+  --color-button: #155DFC;  /* blue600 */
   --color-button-hover: #1D4ED8; /* blue700 */
   --color-button-active: #1E40AF; /* blue800 */
   --color-link: var(--color-button);
