@@ -31,7 +31,7 @@ export default function HomeContent() {
         Welcome to <br className="sm:hidden" />My Portfolio!
       </Title>
 
-      <div className="grid items-center justify-center grid-cols-5 gap-2 mb-6 sm:mt-4 sm:mb-10 sm:gap-8">
+      <div className="grid items-center justify-center grid-cols-5 gap-2 mx-auto mb-6 sm:mt-4 sm:mb-10 sm:gap-8 sm:max-w-sm">
         {homeSkills.slice(0, 5).map(skill => (
           <SkillItem key={skill.name} name={skill.name} image={skill.image} home />
         ))}
