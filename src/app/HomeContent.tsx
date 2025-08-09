@@ -1,7 +1,6 @@
 'use client';
 
 import { Button } from "@/components/ui/Button";
-import { HomeLayout } from "@/components/HomeLayout";
 import { Title } from "@/components/ui/Title";
 import { SkillItem } from "@/components/ui/SkillItem";
 import { skills } from "@/data/skills";
@@ -23,7 +22,7 @@ export default function HomeContent() {
   }, []);
 
   return (
-    <HomeLayout className={`transition-all duration-700 ease-out transform ${
+    <div className={`transition-all duration-700 ease-out transform ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       }`}>
       <Title homeLayout>
@@ -48,6 +47,6 @@ export default function HomeContent() {
             </Button>
           ))}
       </div>
-    </HomeLayout>
+    </div>
   );
 }
