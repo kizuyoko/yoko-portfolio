@@ -20,6 +20,7 @@ export const skills: Skill[] = [
     name: "Next.js",
     image: "/skills/nextjs.svg",
     home: 4,
+    darkInvert: true,
   }, {
     category: "Frontend Development",
     name: "Vue.js",
@@ -62,6 +63,7 @@ export const skills: Skill[] = [
     category: "Testing",  
     name: "Cypress",
     image: "/skills/cypress.svg",
+    darkInvert: true,
   }, {
     category: "Testing",
     name: "Testing Library",
@@ -74,14 +76,17 @@ export const skills: Skill[] = [
     category: "API & Data Fetching",
     name: "REST API",
     image: "/skills/rest-api.svg",
+    darkInvert: true,
   }, {
     category: "API & Data Fetching",
     name: "HTTP Requests",
     image: "/skills/http.svg",
+    darkInvert: true,
   },  {
     category: "API & Data Fetching",
     name: "Fetch API",
     image: "/skills/fetch-api.svg",
+    darkInvert: true,
   }, { 
     category: "API & Data Fetching",
     name: "TanStack Query",
@@ -94,6 +99,7 @@ export const skills: Skill[] = [
     category: "API & Data Fetching",
     name: "JSON",
     image: "/skills/json.svg",
+    darkInvert: true,
   }, {  
     category: "Performance & Accessibility",
     name: "Lighthouse",
@@ -106,6 +112,7 @@ export const skills: Skill[] = [
     category: "Deployment & Hosting",
     name: "Vercel",
     image: "/skills/vercel.svg",
+    darkInvert: true,
   }, {
     category: "Deployment & Hosting",
     name: "Netlify",
@@ -118,6 +125,7 @@ export const skills: Skill[] = [
     category: "Version Control, CI/CD",
     name: "GitHub",
     image: "/skills/github.svg",
+    darkInvert: true,
   }, {
     category: "Version Control, CI/CD",
     name: "GitLab",
@@ -150,6 +158,7 @@ export const skills: Skill[] = [
     category: "Development Tools",
     name: "npm",
     image: "/skills/npm.svg",
+    darkInvert: true,
   }, {
     category: "Development Tools",
     name: "Vite",
@@ -162,10 +171,12 @@ export const skills: Skill[] = [
     category: "AI & Automation",
     name: "ChatGPT",
     image: "/skills/chatgpt.svg",
+    darkInvert: true,
   }, {
     category: "AI & Automation",
     name: "GitHub Copilot",
     image: "/skills/github-copilot.svg",
+    darkInvert: true,
   }, {
     category: "AI & Automation",
     name: "Gemini",
@@ -191,6 +202,7 @@ export const skills: Skill[] = [
     category: "CMS & CRM",
     name: "WordPress",
     image: "/skills/wordpress.svg",
+    darkInvert: true,
   }, {
     category: "Agile Methodologies",
     name: "Scrum",

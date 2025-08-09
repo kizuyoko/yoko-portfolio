@@ -3,4 +3,5 @@ export type Skill = {
   name: string;
   image?: string;
   home?: number;
+  darkInvert?: boolean;
 };

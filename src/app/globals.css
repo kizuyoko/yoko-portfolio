@@ -35,6 +35,8 @@
     --color-text: #ffffff; /* white */
     --color-title: #ffffff; /* white */
     --color-title-secondary: #d1d5db; /* gray300 */
+    --color-submenu: #1f2937; /* gray800 */
+    --color-skill-item: #374151; /* gray700 */
   }
 }
 
