@@ -22,9 +22,11 @@ export default function HomeContent() {
   }, []);
 
   return (
-    <div className={`transition-all duration-700 ease-out transform ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-      }`}>
+    <div
+      className={`p-4 sm:p-16 transition-all duration-700 ease-out transform ${
+      isVisible ? "opacity-100 translate-y-0 shadow-lg bg-[var(--mainBackground)]" : "opacity-0 translate-y-5 shadow-none bg-transparent"
+      }`}
+    >
       <Title homeLayout>
         Welcome to <br className="sm:hidden" />My Portfolio!
       </Title>
