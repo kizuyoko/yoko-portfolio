@@ -49,7 +49,7 @@ export function AnimatedSkills() {
             >
               {skills.map(skill => (
                 <motion.li key={skill.name} variants={itemVariants}>
-                  <SkillItem name={skill.name} icon={skill.image} />
+                  <SkillItem name={skill.name} image={skill.image} darkInvert={skill.darkInvert} />
                 </motion.li>
               ))}
             </motion.ul>
