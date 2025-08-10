@@ -40,6 +40,12 @@
   }
 }
 
+@media (max-width: 640px) {
+  h3::before {
+    content: "› ";
+  }
+}
+
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -102,6 +108,16 @@ button, .button {
   color: var(--color-text);
   @apply p-4 shadow-md w-full;
 }
+.sub-menu h3::before {
+  content: "› ";
+}
+.sub-menu h3 {
+  @apply font-medium m-0;
+}
+.sub-menu ul {
+  @apply pt-2 pl-4 sm:p-0 hidden sm:block peer-checked:block;
+}
+
 
 
 

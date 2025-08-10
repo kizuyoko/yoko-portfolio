@@ -8,14 +8,18 @@ export const metadata = {
   description: "My skills and expertise in web development.",
 };
 
-export default function Home() {
+export default function Skill() {
   // Group skills by category
   const categories = [...new Set(skills.map(skill => skill.category))];
 
   return (
     <DefaultLayout>
       <SubMenu>
-        <ul>
+        <input type="checkbox" id="submenu-toggle" className="hidden peer" />
+        <label htmlFor="submenu-toggle" className="cursor-pointer sm:hidden">
+          <h3>Skills </h3>
+        </label>
+        <ul>  
           {categories.map(category => (
           <li 
             key={category}
