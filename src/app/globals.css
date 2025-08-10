@@ -53,8 +53,8 @@ body {
   line-height: 1.4;
 } 
 
-main {
-  
+.homeLayout{
+  @apply bg-[var(--mainBackground)] sm:bg-[var(--background)]; 
 }
 
 h1, h2, h3 {
