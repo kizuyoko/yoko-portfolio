@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
+
 export type Project = {
-  id: number;
   title: string;
-  description: string;
+  description: ReactNode;
   techStack: string[];
   image: string;
   link?: string;
