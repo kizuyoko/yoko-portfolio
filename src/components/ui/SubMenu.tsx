@@ -1,9 +1,11 @@
+import Link from "next/link";
 type SubMenuProps = {
   title: string;
   items: string[];
+  isProjects?: boolean
 };
 
-export const SubMenu = ({ title, items }: SubMenuProps) => {
+export const SubMenu = ({ title, items, isProjects }: SubMenuProps) => {
   return (
     <aside className="sm:sticky sm:right-0 sm:max-w-1/4 sm:mr-8 sm:mt-8">
       <div className="sub-menu">
@@ -14,7 +16,12 @@ export const SubMenu = ({ title, items }: SubMenuProps) => {
         <ul>  
           {items.map(item => (
           <li key={item}>
-            <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</a>
+            {
+              isProjects ? 
+                <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</Link>
+              : 
+                <Link href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</Link>
+            }
           </li>
           ))}
         </ul>
