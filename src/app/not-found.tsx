@@ -6,7 +6,8 @@ export default function NotFound() {
   return (
     <HomeLayout>
       <div
-      className="m-4 sm:m-0 p-4 sm:p-16 bg-[var(--mainBackground)]"
+      className="m-4 sm:
+      m-0 p-4 sm:p-16 bg-[var(--mainBackground)]"
     >
         <Title homeLayout>
           404 - Not Found

@@ -14,22 +14,10 @@ export default function Skill() {
 
   return (
     <DefaultLayout>
-      <SubMenu>
-        <input type="checkbox" id="submenu-toggle" className="hidden peer" />
-        <label htmlFor="submenu-toggle" className="cursor-pointer sm:hidden">
-          <h3>Skills </h3>
-        </label>
-        <ul>  
-          {categories.map(category => (
-          <li 
-            key={category}
-            className="mb-4 text-xl font-medium hover:underline"
-          >
-            <a href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}>{category}</a>
-          </li>
-          ))}
-        </ul>
-      </SubMenu>
+      <SubMenu 
+        title="Skills"
+        items={categories}
+      />
       <AnimatedSkills />
     </DefaultLayout>
   );
