@@ -28,7 +28,7 @@ export function AnimatedSkills() {
   };
 
   return (
-    <section className="flex flex-col items-start flex-1 m-4 sm:m-8">
+    <section>
       <Title>Skills</Title>
       <motion.div
         className="w-full mt-6 space-y-8"
