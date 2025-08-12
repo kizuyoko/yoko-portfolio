@@ -2,9 +2,11 @@ import { ReactNode } from "react";
 
 export type Project = {
   title: string;
-  description: ReactNode;
+  description: ReactNode | string;
   techStack: string[];
   image: string;
-  link?: string;
+  demo?: string;
   github?: string;
+  topProject?: boolean;
 };
+ 

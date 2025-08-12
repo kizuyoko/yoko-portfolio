@@ -12,12 +12,13 @@ export default function Projects() {
       <Title>
         Projects
       </Title>
-      <p>This is Projects Page.</p>
+      <h2 className="mt-6">Top Projects</h2>
+      
       <Button
-        href="/"
-        ariaLabel="Go back to Home page"
+        href="/other-projects"
+        ariaLabel="Go to Other Projects"
       >
-        Home
+        Other Projects
       </Button>
     </section>
   );

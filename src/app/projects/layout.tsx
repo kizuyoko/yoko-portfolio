@@ -13,13 +13,15 @@ export default function ProjectsLayout({
   children: React.ReactNode;
 }>) {
 
-  const titles = [...new Set(projects.map(project => project.title))];
+  const topProjects = projects.filter(projects => projects.topProject);
+  const projectTitles = [...new Set(topProjects.map(project => project.title))];
+  const SubMenuTitles = [...projectTitles, "Others"]
 
   return (
     <DefaultLayout>
       <SubMenu 
         title="Projects"
-        items={titles}
+        items={SubMenuTitles}
         isProjects
       />
       {children}
