@@ -24,7 +24,7 @@ export default function TopProjectThumbnail({ title, image, techStack  }: TopPro
           className="w-full h-auto"
         />
         <div className="absolute bottom-0 left-0 flex flex-col w-full px-4 py-2 bg-black opacity-70">
-          <h4 className="font-semibold text-white ">{title}</h4>
+          <h3 className="font-semibold text-white font-sm">{title}</h3>
           <p className="text-sm text-white truncate">{techStack.join(', ')}</p>
         </div>
       </Link>
