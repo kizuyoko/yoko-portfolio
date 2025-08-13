@@ -20,6 +20,7 @@
 
   --font-text: var(--font-sans);
   --font-title: var(--font-sora);
+  --font-menu: var(--font-mono);
   --font-button: var(--font-mono);
 }
 
@@ -85,8 +86,9 @@ button, .button {
 }
 
 .menu-item {
+  font-family: var(--font-menu), monospace;
   color: var(--color-text-menu);
-  @apply text-2xl;
+  @apply text-xl transition-transform duration-200 group-hover:translate-x-1;
 }
 
 .homeLayout header {
@@ -121,6 +123,7 @@ button, .button {
   @apply pt-2 pl-4 sm:p-0 hidden sm:block peer-checked:block;
 }
 .sub-menu li {
+  font-family: var(--font-menu), monospace;
   @apply mb-4 text-xl font-medium hover:underline
 }
 

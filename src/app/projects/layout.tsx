@@ -15,7 +15,7 @@ export default function ProjectsLayout({
 
   const topProjects = projects.filter(projects => projects.topProject);
   const projectTitles = [...new Set(topProjects.map(project => project.title))];
-  const SubMenuTitles = [...projectTitles, "Others"]
+  const SubMenuTitles = [...projectTitles, "Other Projects"]
 
   return (
     <DefaultLayout>
