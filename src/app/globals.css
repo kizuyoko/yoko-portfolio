@@ -73,7 +73,7 @@ h1 {
   @apply font-semibold text-3xl sm:text-4xl text-shadow-2xs pb-1;
 }
 
-h2, h3 {
+h2 {
   color: var(--color-title-secondary);
   @apply font-semibold text-2xl mb-2;
 }
@@ -117,17 +117,15 @@ button, .button {
   content: "› ";
 }
 .sub-menu h3 {
-  @apply font-medium m-0;
+  @apply font-semibold m-0 text-2xl;
 }
 .sub-menu ul {
   @apply pt-2 pl-4 sm:p-0 hidden sm:block peer-checked:block;
 }
 .sub-menu li {
   font-family: var(--font-menu), monospace;
-  @apply mb-4 text-xl font-medium hover:underline
+  @apply mb-4 text-xl font-medium hover:underline;
 }
-
-
 
 
 

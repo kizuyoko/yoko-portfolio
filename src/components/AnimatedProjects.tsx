@@ -35,8 +35,9 @@ export function AnimatedProjects () {
         ))}        
       <motion.div variants={itemVariants} className="mt-4 col-span-full">
         <Button
-          href="/other-projects"
+          href="/projects/other-projects"
           ariaLabel="Go to Other Projects"
+          className="block sm:inline"
         >
           Other Projects
         </Button>
