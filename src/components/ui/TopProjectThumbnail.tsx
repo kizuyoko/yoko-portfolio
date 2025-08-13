@@ -11,7 +11,7 @@ export default function TopProjectThumbnail({ title, image, techStack  }: TopPro
   return (
     <article
       key={slugify(title)}
-      className="relative overflow-hidden transition-shadow duration-300 bg-white shadow-sm hover:shadow-xl"
+      className="relative overflow-hidden transition-shadow duration-300 bg-white shadow-sm hover:shadow-xl group"
     >
       <Link 
         href={`/projects/${slugify(title)}`}
@@ -21,7 +21,7 @@ export default function TopProjectThumbnail({ title, image, techStack  }: TopPro
           width={640}
           height={445}
           alt={title}
-          className="w-full h-auto"
+          className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute bottom-0 left-0 flex flex-col w-full px-4 py-2 bg-black opacity-70">
           <h3 className="font-semibold text-white font-sm">{title}</h3>
