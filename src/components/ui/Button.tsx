@@ -8,6 +8,7 @@ type ButtonProps = {
   onClick?: () => void;
   className?: string;
   ariaLabel?: string;
+  isExternal?: boolean;
 };
 
 export const Button = ({
@@ -16,18 +17,33 @@ export const Button = ({
   onClick,
   className = "",
   ariaLabel,
+  isExternal
 }: ButtonProps) => {
 
   if (href) {
-    return (
-      <Link 
-        href={href} 
-        className={`button text-center ${className}`}
-        aria-label={ariaLabel}
-      >
-        {children}
-      </Link>
-    );
+    if (isExternal){
+      return (
+        <a 
+          href={href} 
+          className={`button text-center ${className}`}
+          aria-label={ariaLabel}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
+      );
+    } else {
+      return (
+        <Link 
+          href={href} 
+          className={`button text-center ${className}`}
+          aria-label={ariaLabel}
+        >
+          {children}
+        </Link>
+      );
+    }
   }
 
   return (

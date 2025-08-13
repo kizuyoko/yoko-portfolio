@@ -2,6 +2,7 @@ import { DefaultLayout } from "@/components/DefaultLayout";
 import { skills } from "@/data/skills";
 import { SubMenu } from "@/components/ui/SubMenu";
 import { AnimatedSkills } from "@/components/AnimatedSkills";
+import { Title } from "@/components/ui/Title";
 
 export const metadata = {
   title: "Skills - Yoko's Portfolio",
@@ -18,7 +19,10 @@ export default function Skill() {
         title="Skills"
         items={categories}
       />
-      <AnimatedSkills />
+      <section>
+        <Title>Skills</Title>
+        <AnimatedSkills />
+      </section>
     </DefaultLayout>
   );
 }
