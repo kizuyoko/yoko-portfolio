@@ -1,30 +1,21 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import TopProjectThumbnail from "./ui/TopProjectThumbnail";
 import { Title } from "@/components/ui/Title";
 import { projects } from "@/data/projects";
 import { Button } from "./ui/Button";
+import { containerVariants, itemVariants } from "@/utils/animations";
 
 export function AnimatedProjects () {
   const topProjects = projects.filter(projects => projects.topProject);
-
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
 
   return (
     <section>
       <Title>Projects</Title>
       <h2 className="mt-6">Top Projects</h2>
       <motion.div
-        className="grid w-full grid-cols-1 gap-4 pb-4 mt-2 space-y-8 sm:grid-cols-2"
+        className="grid w-full grid-cols-1 gap-4 pb-4 mt-2 sm:grid-cols-2"
         variants={containerVariants}
         initial="hidden"
         animate="show"
@@ -32,10 +23,7 @@ export function AnimatedProjects () {
         {topProjects.map(project => (
           <motion.div 
             key={project.title} 
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
-            }}
+            variants={itemVariants}
             className="mb-0"
           >
             <TopProjectThumbnail 
@@ -45,13 +33,15 @@ export function AnimatedProjects () {
             />
           </motion.div>
         ))}        
-      </motion.div>
-      <Button
+      <motion.div variants={itemVariants} className="mt-4 col-span-full">
+        <Button
           href="/other-projects"
           ariaLabel="Go to Other Projects"
         >
           Other Projects
         </Button>
+      </motion.div>
+    </motion.div>
     </section>
   );
 }
