@@ -1,9 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Title } from "@/components/ui/Title";
 import { projects } from "@/data/projects";
-import Link from "next/link";
-import Image from "next/image";
-import { slugify } from "@/utils/slugify";
 import TopProjectThumbnail from "@/components/ui/TopProjectThumbnail";
 
 export const metadata = {
