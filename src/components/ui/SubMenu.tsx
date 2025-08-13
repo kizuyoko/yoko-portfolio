@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { slugify } from "@/utils/slugify";
+
 type SubMenuProps = {
   title: string;
   items: string[];
@@ -18,9 +20,9 @@ export const SubMenu = ({ title, items, isProjects }: SubMenuProps) => {
           <li key={item}>
             {
               isProjects ? 
-                <Link href={`/projects/${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</Link>
+                <Link href={`/projects/${slugify(item)}`}>{item}</Link>
               : 
-                <Link href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</Link>
+                <Link href={`#${slugify(item)}`}>{item}</Link>
             }
           </li>
           ))}

@@ -4,6 +4,7 @@ import { motion, Variants } from "framer-motion";
 import { SkillItem } from "@/components/ui/SkillItem";
 import { Title } from "@/components/ui/Title";
 import { skills } from "@/data/skills";
+import { slugify } from "@/utils/slugify";
 
 export function AnimatedSkills() {
   const categories = [...new Set(skills.map(skill => skill.category))];
@@ -38,8 +39,8 @@ export function AnimatedSkills() {
       >
         {skillsByCategory.map(({ category, skills }) => (
           <motion.div
-            key={category}
-            id={category.toLowerCase().replace(/\s+/g, '-')}
+            key={slugify(category)}
+            id={slugify(category)}
             variants={itemVariants}
           >
             <h2 className="mb-2 text-lg font-semibold">{category}</h2>
