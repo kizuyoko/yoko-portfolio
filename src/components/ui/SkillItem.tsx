@@ -2,7 +2,7 @@ import Image from "next/image";
 
 type skillItemProps = {
   name: string;
-  home?: boolean;
+  home?: number;
   category?: string;
   image?: string;
   darkInvert?: boolean;
