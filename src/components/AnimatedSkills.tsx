@@ -1,10 +1,11 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { SkillItem } from "@/components/ui/SkillItem";
 import { Title } from "@/components/ui/Title";
 import { skills } from "@/data/skills";
 import { slugify } from "@/utils/slugify";
+import { containerVariants, itemVariants } from "@/utils/animations";
 
 export function AnimatedSkills() {
   const categories = [...new Set(skills.map(skill => skill.category))];
@@ -12,21 +13,6 @@ export function AnimatedSkills() {
     category,
     skills: skills.filter(skill => skill.category === category)
   }));
-
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
-
-  const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
-  };
 
   return (
     <section>
