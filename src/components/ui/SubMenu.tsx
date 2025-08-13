@@ -18,7 +18,7 @@ export const SubMenu = ({ title, items, isProjects }: SubMenuProps) => {
           <li key={item}>
             {
               isProjects ? 
-                <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</Link>
+                <Link href={`/projects/${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</Link>
               : 
                 <Link href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</Link>
             }
