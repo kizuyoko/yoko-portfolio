@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Title } from "@/components/ui/Title";
 import { projects } from "@/data/projects";
-import Link from "next/link";
-import Image from "next/image";
+import TopProjectThumbnail from "@/components/ui/TopProjectThumbnail";
 
 export const metadata = {
   title: "Projects - Yoko's Portfolio",
@@ -18,22 +17,17 @@ export default function Projects() {
         Projects
       </Title>
       <h2 className="mt-6">Top Projects</h2>
-      <div className="grid grid-cols-2 gap-4 mt-4">
+      <div className="grid grid-cols-1 gap-4 pb-4 mt-4 sm:grid-cols-2">
         {
           topProjects.map(project => (
-            <article key={project.title}>
-              <Link href={`/projects/${project.title}`}>
-                <Image 
-                  src={`/projects/${project.image}`}
-                  width="640"
-                  height="445"
-                  alt={project.title}                />
-                {project.title}
-              </Link>
-            </article>
+            <TopProjectThumbnail 
+              key={project.title}
+              title={project.title}
+              image={project.image}
+              techStack={project.techStack}
+            />
           ))
         }
-
       </div>
       <Button
         href="/other-projects"
