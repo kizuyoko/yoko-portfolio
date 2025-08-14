@@ -15,7 +15,7 @@ type MenuItemProps = {
 
 export const MenuItem = ({ href, src, name, ariaLabel, width, height }: MenuItemProps) => {
   const pathname = usePathname();
-  const isActive = pathname === href;
+  const isActive = pathname === href || pathname.startsWith(`${href}/`);
   
   return (
     <Link
