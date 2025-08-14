@@ -4,11 +4,13 @@ import { notFound } from "next/navigation";
 import { slugify } from "@/utils/slugify";
 
 type ProjectPageProps = {
-  params: { projectId: string };
+  params: Promise<{ projectId: string }>;
 }
 
-export default function ProjecPage({ params }: ProjectPageProps) {
-  const project = projects.find(p => slugify(p.title) === params.projectId);
+
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { projectId } = await params;
+  const project = projects.find((p) => slugify(p.title) === projectId);
 
   if (!project) {
     notFound();
