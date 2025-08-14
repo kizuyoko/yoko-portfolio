@@ -5,8 +5,8 @@ export type Project = {
   description: ReactNode | string;
   techStack: string[];
   image: string;
-  demo?: string;
-  github?: string;
+  demo: string;
+  github: string;
   topProject?: boolean;
 };
  
