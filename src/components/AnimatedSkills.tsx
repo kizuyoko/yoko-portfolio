@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { SkillItem } from "@/components/ui/SkillItem";
-import { Title } from "@/components/ui/Title";
 import { skills } from "@/data/skills";
 import { slugify } from "@/utils/slugify";
 import { containerVariants, itemVariants } from "@/utils/animations";
@@ -15,34 +14,31 @@ export function AnimatedSkills() {
   }));
 
   return (
-    <section>
-      <Title>Skills</Title>
-      <motion.div
-        className="w-full mt-6 space-y-8"
-        variants={containerVariants}
-        initial="hidden"
-        animate="show"
-      >
-        {skillsByCategory.map(({ category, skills }) => (
-          <motion.div
-            key={slugify(category)}
-            id={slugify(category)}
-            variants={itemVariants}
+    <motion.div
+      className="w-full mt-6 space-y-8"
+      variants={containerVariants}
+      initial="hidden"
+      animate="show"
+    >
+      {skillsByCategory.map(({ category, skills }) => (
+        <motion.div
+          key={slugify(category)}
+          id={slugify(category)}
+          variants={itemVariants}
+        >
+          <h2 className="mb-2 text-lg font-semibold">{category}</h2>
+          <motion.ul
+            className="flex flex-wrap gap-2"
+            variants={containerVariants}
           >
-            <h2 className="mb-2 text-lg font-semibold">{category}</h2>
-            <motion.ul
-              className="flex flex-wrap gap-2"
-              variants={containerVariants}
-            >
-              {skills.map(skill => (
-                <motion.li key={skill.name} variants={itemVariants}>
-                  <SkillItem name={skill.name} image={skill.image} darkInvert={skill.darkInvert} />
-                </motion.li>
-              ))}
-            </motion.ul>
-          </motion.div>
-        ))}
-      </motion.div>
-    </section>
+            {skills.map(skill => (
+              <motion.li key={skill.name} variants={itemVariants}>
+                <SkillItem name={skill.name} image={skill.image} darkInvert={skill.darkInvert} />
+              </motion.li>
+            ))}
+          </motion.ul>
+        </motion.div>
+      ))}
+    </motion.div>
   );
 }

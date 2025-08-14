@@ -1,4 +1,5 @@
 import { AnimatedProjects } from "@/components/AnimatedProjects";
+import { Title } from "@/components/ui/Title";
 
 export const metadata = {
   title: "Projects - Yoko's Portfolio",
@@ -8,6 +9,9 @@ export const metadata = {
 export default function Projects() {
   
   return (
-    <AnimatedProjects />
+    <section>
+      <Title>Projects</Title>
+      <AnimatedProjects />
+    </section>  
   );
 }
