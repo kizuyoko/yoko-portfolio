@@ -85,6 +85,12 @@ button, .button {
   @apply font-medium text-xl px-6 py-2 mt-2 rounded-4xl hover:bg-[var(--color-button-hover)] active:bg-[var(--color-button-active)];
 }
 
+hr {
+  border: none; 
+  border-top: 1px solid var(--color-horizontal-line);
+  margin-bottom: 2rem;
+}
+
 .menu-item {
   font-family: var(--font-menu), monospace;
   color: var(--color-text-menu);
