@@ -18,7 +18,7 @@ export function AnimatedProjects () {
         initial="hidden"
         animate="show"
       >
-        {topProjects.map(project => (
+        {topProjects.map((project, index) => (
           <motion.div 
             key={project.title} 
             variants={itemVariants}
@@ -28,6 +28,7 @@ export function AnimatedProjects () {
               title={project.title}
               image={project.image}
               techStack={project.techStack}
+              index={index}
             />
           </motion.div>
         ))}        

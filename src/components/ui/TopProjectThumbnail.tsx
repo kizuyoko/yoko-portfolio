@@ -6,8 +6,9 @@ type TopProjectThumbnailProps = {
   title: string;
   image: string;
   techStack: string[];
+  index: number;
 }
-export default function TopProjectThumbnail({ title, image, techStack  }: TopProjectThumbnailProps) {
+export default function TopProjectThumbnail({ title, image, techStack, index  }: TopProjectThumbnailProps) {
   return (
     <article
       key={slugify(title)}
@@ -22,6 +23,7 @@ export default function TopProjectThumbnail({ title, image, techStack  }: TopPro
           height={445}
           alt={title}
           className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+          priority={index === 0}
         />
         <div className="absolute bottom-0 left-0 flex flex-col w-full px-4 py-2 bg-black opacity-70">
           <h3 className="font-semibold text-white font-sm">{title}</h3>
