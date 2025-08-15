@@ -46,7 +46,7 @@ export const AnimatedProject = ({
           height={445}
           alt={title}
           priority
-          className="my-2 shadow sm:my-6"
+          className="mt-2 shadow sm:mt-6"
         />
       </motion.div>
 

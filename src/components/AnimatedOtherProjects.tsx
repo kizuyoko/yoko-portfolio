@@ -24,8 +24,8 @@ export default function AnimatedOtherProjects() {
           variants={itemVariants}
           className="w-full"
         >
-          {index !== 0 && <hr />}
-          <div className="flex flex-col w-full gap-4 pb-4 mt-2 sm:gap-8 sm:flex-row ">
+          { index !== 0 && <hr /> }
+          <div className={`flex flex-col w-full gap-2 pb-4 mt-2 sm:gap-8  ${index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"}`}>
             <h2 className="sm:hidden">{project.title}</h2>
             <Image 
               src={`/projects/${project.image}`}
@@ -36,22 +36,18 @@ export default function AnimatedOtherProjects() {
             />
             <div className="flex-1">
               <h2 className="hidden sm:block">{project.title}</h2>
-              <motion.div
-                className="flex flex-wrap gap-2 mt-2"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.2, duration: 0.4 }}
+              <div className="flex flex-wrap gap-2 mt-2"
               >{project.techStack.map((tech) => (
                 <SkillItem key={tech} name={tech} />
               ))}
-              </motion.div> 
+              </div>
+              <p className="pt-4 pb-2">{project.description}</p>   
               <div className="flex gap-4">
                 <Button href={project.demo}>Demo</Button>
                 <Button href={project.github}>GitHub</Button>
               </div>
             </div>
-          </div>
-          <p>{project.description}</p>    
+          </div>    
         </motion.article>
       ))} 
     </motion.div>  

@@ -32,7 +32,7 @@ export function AnimatedProjects () {
             />
           </motion.div>
         ))}        
-      <motion.div variants={itemVariants} className="mt-4 col-span-full">
+      <div className="mt-4 col-span-full">
         <Button
           href="/projects/other-projects"
           ariaLabel="Go to Other Projects"
@@ -40,7 +40,7 @@ export function AnimatedProjects () {
         >
           Other Projects
         </Button>
-      </motion.div>
+      </div>
     </motion.div>
   </>  
   );
