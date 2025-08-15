@@ -60,12 +60,18 @@ export const AnimatedProject = ({
           <SkillItem key={tech} name={tech} />
         ))}
       </motion.div>
-
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.4 }}
+      >
+        {typeof description === "string" ? <p>{description}</p> : description}
+      </motion.div>
       <motion.div
         className="flex items-center justify-center gap-2 mb-6"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.4 }}
+        transition={{ delay: 0.4, duration: 0.4 }}
       >
         <Button href={demo} ariaLabel={`Demo of ${title}`}>
           Demo
@@ -73,15 +79,7 @@ export const AnimatedProject = ({
         <Button href={github} ariaLabel={`GitHub of ${title}`}>
           GitHub
         </Button>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.4, duration: 0.4 }}
-      >
-        {typeof description === "string" ? <p>{description}</p> : description}
-      </motion.div>
+      </motion.div>  
     </motion.section>
   );
 };
