@@ -85,10 +85,14 @@ button, .button {
   @apply font-medium text-xl px-6 py-2 mt-2 rounded-4xl hover:bg-[var(--color-button-hover)] active:bg-[var(--color-button-active)];
 }
 
+p {
+  @apply pb-2
+}
+
 hr {
   border: none; 
   border-top: 1px solid var(--color-horizontal-line);
-  margin-top: 2rem
+  @apply mt-6 w-full shadow;
 }
 
 .menu-item {
@@ -110,6 +114,10 @@ hr {
 .homeLayout footer {
   @apply sm:bg-transparent bg-[var(--mainBackground)];
 }
+.defaultLayout {
+  @apply flex flex-col min-h-screen bg-[var(--mainBackground)]
+}
+
 .defaultLayout section {
   @apply flex flex-col items-start flex-1 m-4 sm:m-8;
 }
