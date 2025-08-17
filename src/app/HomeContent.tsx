@@ -44,7 +44,7 @@ export default function HomeContent() {
         {siteConfig.nav
           .filter(item => item.href !== "/")
           .map(({ name, href }) => (
-            <Button key={href} href={href} ariaLabel={`Go to ${name} page`} className="w-full sm:w-auto">
+            <Button key={href} href={href} ariaLabel={`Go to ${name} page`} className="w-full primary-button sm:w-auto">
               {name}
             </Button>
           ))}

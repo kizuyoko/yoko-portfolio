@@ -17,6 +17,7 @@ export default function NotFound() {
           <Button
             href="/"
             ariaLabel="Go back to Home page"
+            className="primary-button"
           >
             Home
           </Button>

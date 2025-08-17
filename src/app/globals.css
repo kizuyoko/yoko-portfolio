@@ -82,7 +82,11 @@ button, .button {
   font-family: var(--font-button), monospace;
   background-color: var(--color-button);
   color: var(--color-text-button);
-  @apply font-medium text-xl px-6 py-2 mt-2 rounded-4xl hover:bg-[var(--color-button-hover)] active:bg-[var(--color-button-active)];
+  @apply font-medium text-lg px-4 py-1 rounded-4xl hover:bg-[var(--color-button-hover)] active:bg-[var(--color-button-active)];
+}
+
+.primary-button {
+  @apply text-xl px-6 py-2 mt-2
 }
 
 p {

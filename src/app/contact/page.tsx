@@ -10,7 +10,7 @@ export const metadata = {
 export default function Home() {
   return (
     <DefaultLayout isContact>
-      <section className="max-w-3xl">
+      <section className="max-w-2xl">
         <Title>
           Let&apos;s Get in Touch!
         </Title>
@@ -34,34 +34,34 @@ export default function Home() {
           </Button>
         </div>
         <hr />
-        <h2 className="my-2">Send a Message</h2>
+        <h2 className="mt-8 mb-2">Send a Message</h2>
         <p>Otherwise, you can send me a message with this form.</p>
-        <form action="" className="w-full sm:w-auto">
-          <div className="grid grid-cols-1 my-2 className sm:grid-cols-2">
-            <label htmlFor="name">Your Name</label>
+        <form action="" className="w-full">
+          <div className="grid grid-cols-1 my-2 sm:grid-cols-[140px_1fr] gap-2">
+            <label htmlFor="yourName" className="flex items-center">Your Name *</label>
             <input 
-              name="name"
+              name="yourName"
               type="text"
-              className="border" 
+              className="border min-w-2xs" 
             />
           </div>
-          <div className="grid grid-cols-1 my-2 className sm:grid-cols-2">
-            <label htmlFor="email">Your Email</label>
+          <div className="grid grid-cols-1 my-2 sm:grid-cols-[140px_1fr] gap-2">
+            <label htmlFor="yourEmail">Your Email *</label>
             <input 
-              name="email"
+              name="yourEmail"
               type="text" 
               className="border" 
             />
           </div>
-          <div className="grid grid-cols-1 my-2 className sm:grid-cols-2 ">
-            <label htmlFor="message">Your Message</label>
+          <div className="grid grid-cols-1 my-2 sm:grid-cols-[140px_1fr] gap-2">
+            <label htmlFor="yourMessage">Your Message *</label>
             <input 
-              name="message"
+              name="yourMessage"
               type="textarea" 
               className="h-10 border" 
             />
           </div>
-          <div className="flex flex-row gap-4 mb-8">
+          <div className="flex flex-row justify-end w-full gap-4 mt-4 mb-8">
             <Button>Clear</Button>
             <Button>Submit</Button>
           </div>
