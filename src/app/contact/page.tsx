@@ -37,29 +37,26 @@ export default function Home() {
         <h2 className="mt-8 mb-2">Send a Message</h2>
         <p>Otherwise, you can send me a message with this form.</p>
         <form action="" className="w-full">
-          <div className="grid grid-cols-1 my-2 sm:grid-cols-[140px_1fr] gap-2">
-            <label htmlFor="yourName" className="flex items-center">Your Name *</label>
+          <div className="form-container">
+            <label htmlFor="yourName">Your Name *</label>
             <input 
               name="yourName"
               type="text"
-              className="border min-w-2xs" 
             />
           </div>
-          <div className="grid grid-cols-1 my-2 sm:grid-cols-[140px_1fr] gap-2">
+          <div className="form-container">
             <label htmlFor="yourEmail">Your Email *</label>
             <input 
               name="yourEmail"
               type="text" 
-              className="border" 
             />
           </div>
-          <div className="grid grid-cols-1 my-2 sm:grid-cols-[140px_1fr] gap-2">
+          <div className="form-container">
             <label htmlFor="yourMessage">Your Message *</label>
-            <input 
+            <textarea 
               name="yourMessage"
-              type="textarea" 
-              className="h-10 border" 
-            />
+              className="h-20 border" 
+            ></textarea>
           </div>
           <div className="flex flex-row justify-end w-full gap-4 mt-4 mb-8">
             <Button>Clear</Button>

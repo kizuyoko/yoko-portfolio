@@ -17,6 +17,7 @@
   --color-title-underline: #FFCCD3; /* rose200 */
   --color-submenu: #F1F5F9; /* slate100 */
   --color-skill-item: #F1F5F9; /* slate100 */
+  --color-input-border: #6a7282; /* gray500 */
 
   --font-text: var(--font-sans);
   --font-title: var(--font-sora);
@@ -143,6 +144,15 @@ hr {
 .sub-menu li {
   font-family: var(--font-menu), monospace;
   @apply mb-4 text-xl font-medium hover:underline;
+}
+
+.form-container {
+  @apply grid grid-cols-1 my-2 sm:grid-cols-[140px_1fr] gap-2
+}
+
+form input, form textarea {
+  border-color: var(--color-input-border); 
+  @apply border px-2 py-1 rounded-sm
 }
 
 
