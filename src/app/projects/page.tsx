@@ -6,7 +6,7 @@ export const metadata = {
   description: "My projects and works in web development.",
 };
 
-export default function Projects() {
+export default function ProjectsPage() {
   
   return (
     <section>

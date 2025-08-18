@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/Button";
 import { DefaultLayout } from "@/components/DefaultLayout";
+import { ContactContent } from "@/components/ContactForm";
+import { Button } from "@/components/ui/Button";
 import { Title } from "@/components/ui/Title";
 
 export const metadata = {
@@ -7,7 +8,7 @@ export const metadata = {
   description: "Get in touch with me.",
 };
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <DefaultLayout isContact>
       <section className="max-w-2xl">
@@ -34,36 +35,8 @@ export default function Home() {
           </Button>
         </div>
         <hr />
-        <h2 className="mt-8 mb-2">Send a Message</h2>
-        <p>Otherwise, you can send me a message with this form.</p>
-        <form action="" className="w-full">
-          <div className="form-container">
-            <label htmlFor="yourName">Your Name *</label>
-            <input 
-              name="yourName"
-              type="text"
-            />
-          </div>
-          <div className="form-container">
-            <label htmlFor="yourEmail">Your Email *</label>
-            <input 
-              name="yourEmail"
-              type="text" 
-            />
-          </div>
-          <div className="form-container">
-            <label htmlFor="yourMessage">Your Message *</label>
-            <textarea 
-              name="yourMessage"
-              className="h-20 border" 
-            ></textarea>
-          </div>
-          <div className="flex flex-row justify-end w-full gap-4 mt-4 mb-8">
-            <Button>Clear</Button>
-            <Button>Submit</Button>
-          </div>
-        </form>
-      </section>
+        <ContactContent />
+      </section> 
     </DefaultLayout>
   );
 }
