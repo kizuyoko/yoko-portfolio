@@ -18,6 +18,9 @@
   --color-submenu: #F1F5F9; /* slate100 */
   --color-skill-item: #F1F5F9; /* slate100 */
   --color-input-border: #6a7282; /* gray500 */
+  --color-error: #E7000B; /* red600 */
+  --color-disabled: #99A1AF; /* gray400 */
+  --color-success: #4CAF50; /* green500 */
 
   --font-text: var(--font-sans);
   --font-title: var(--font-sora);
@@ -155,8 +158,30 @@ form input, form textarea {
   @apply border px-2 py-1 rounded-sm
 }
 
+.error-text {
+  color: var(--color-error);
+}
+.success-text {
+  color: var(--color-success);
+}
 
+button:disabled, button:disabled:hover {
+  background-color: var(--color-disabled);
+  @apply cursor-not-allowed;
+}
 
+.form-container div {
+  @apply flex flex-col w-full;
+}
 
+.error-input, .error-input:focus {
+  border-color: var(--color-error);
+  outline: none;
+  @apply border-2;
+}
 
-
+.success-border, .success-border:focus {
+  border-color: var(--color-success);
+  outline: none;
+  @apply border-2;
+} 
