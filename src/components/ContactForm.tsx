@@ -47,6 +47,7 @@ export const ContactContent = () => {
     <>
       <h2 className="mt-8 mb-2">Send a Message</h2>
       <p>Otherwise, you can send me a message with this form.</p>
+      <p className="error-text">This form is not ready</p>
       <form onSubmit={handleSubmit} className="w-full">
         <div className="form-container">
           <label 
