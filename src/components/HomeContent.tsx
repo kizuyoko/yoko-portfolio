@@ -39,7 +39,8 @@ export default function HomeContent() {
     
       <p>Hello, I&apos;m Yoko — a Frontend developer with nine years of experience, now focused on modern technologies like React, Vue, Next.js, and TypeScript.</p>
       <p className="py-4">I enjoy working closely with designers and backend engineers, and I thrive in agile environments where collaboration and balance are key.</p>
-      
+      <p className="error-text">⚠️ Work in Progress - This site is still under construction. Some content may be incomplete, but feel free to explore and see the progress! For the latest updates and development progress, check my <a className="underline" href="https://github.com/kizuyoko/yoko-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+
       <div className="flex flex-col items-center justify-center w-full gap-0 mt-6 sm:gap-4 sm:flex-row">
         {siteConfig.nav
           .filter(item => item.href !== "/")
