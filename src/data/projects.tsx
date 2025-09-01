@@ -45,11 +45,47 @@ export const projects: Project[] = [
   }, {
     title: "Quick Invoice",
     description: (
-      <>
+      <article className="project-description">
+        <h2>Overview</h2>
         <p>
           The current version of QuickInvoice is in its MVP phase. It allows users to generate a professional invoice by filling out a simple form and adding multiple items. The app focuses on accessibility, performance, and simplicity, which has resulted in perfect or near-perfect scores in Lighthouse and Wave accessibility audits.Future plans include enhancements such as item editing, integration with Strapi for data handling, setting up Storybook for UI components, connecting to a currency API, and adding automated testing using Jest and Cypress. Additional improvements will focus on the PDF layout, input validation, reusable templates, SEO optimization, performance auditing, and accessibility fixes. In later phases, more advanced features are planned, including user authentication, invoice history and management, multi-language support, a dark mode toggle, CSV export, and A/B testing with Statsig. 
         </p>
-      </>
+        <h2>Features</h2>
+        <ul>
+          <li>Dynamic form with validation</li>
+          <li>Generate invoices with customizable fields</li>
+          <li>Export invoices as PDF</li>
+          <li>Responsive design for both desktop and mobile</li>
+          <li>Simple and clean UI, built with reusable components</li>
+          <li>Planned features: authentication and invoice history</li>
+          <li>Future enhancements: A/B testing, multi-language support, CSV export</li>
+        </ul>
+        <h2>Project Roadmap</h2>
+        <h3>Phase 1: MVP (Git: feature/mvp)</h3>
+        <p>This MVP provided valuable learning opportunities, including:</p>
+        <ul>
+          <li>Shifting from a React-centric mindset to Vue/Nuxt practices</li>
+          <li>Understanding form handling and validation in Vue</li>
+          <li>Implementing PDF generation on the frontend</li>
+        </ul>
+        <h3>Phase 2: Enhancements (Git: feature/enhancements)</h3>
+        <p>This phase focuses on refining the user experience, improving accessibility and performance, and laying the groundwork for future scalability.</p>
+        <ul>
+          <li>Polishing UI components</li>
+          <li>Expanding integrations</li>
+          <li>Adding robust testing and SEO support</li>
+        </ul>
+        <h3>Phase 3: Advanced Features (Git: feature/advanced)</h3>
+        <p>In this phase, we plan to implement more advanced features, including:</p>
+        <ul>
+          <li>User authentication</li>
+          <li>Invoice history and management</li>
+          <li>Multi-language support</li>
+          <li>Dark mode toggle</li>
+          <li>CSV export</li>
+          <li>A/B testing with Statsig</li>
+        </ul>
+      </article>
     ),
     techStack: ['Vue.js', 'Nuxt.js', 'TypeScript', 'Vuex', 'LightHouse', 'Wave', 'Jest', 'Cypress', 'TanStack Query', 'Axios', 'Tailwind', 'Storybook', 'Vercel', 'Figma'],
     image: "quickinvoice.png",
@@ -73,7 +109,7 @@ export const projects: Project[] = [
         </p>
       </>
     ),
-    techStack:  ['React.js', 'TypeScript', 'Vite', 'Redux', 'API (Open Weather, Unslplash, Quote by DummyJSON)', 'Figma', 'Tailwind' ],
+    techStack:  ['React.js', 'TypeScript', 'Vite', 'Redux', 'API (Open Weather, Unsplash, Quote by DummyJSON)', 'Figma', 'Tailwind' ],
     image: "inspiration-hub.png",
     demo: 'https://inspiration-hub-three.vercel.app/',
     github: 'https://github.com/kizuyoko/inspiration-hub',
@@ -102,7 +138,7 @@ export const projects: Project[] = [
   },  {
     title: 'Tailwind Showcase',
     image: 'tailwind_showcase.png',
-    description: 'Tailwind template with menue, 1/2/3 columns, grid, tabs, accordion, form. Works for React, Vue, and vanilla HTML.',
+    description: 'Tailwind template with menu, 1/2/3 columns, grid, tabs, accordion, form. Works for React, Vue, and vanilla HTML.',
     techStack: ['Tailwind', 'JavaScript', 'HTML', 'CSS'],
     demo: 'https://tailwind-showcase-2l1f.vercel.app',
     github: 'https://github.com/kizuyoko/tailwind-showcase',

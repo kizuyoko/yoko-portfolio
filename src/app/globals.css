@@ -184,10 +184,13 @@ button:disabled, button:disabled:hover {
   border-color: var(--color-success);
   outline: none;
   @apply border-2;
-} 
-.project-description h2 {
-  @apply pt-2 
+}
+.project-description h2, .project-description h3 {
+  @apply pt-2
 }
 .project-description ul, ol {
   @apply pb-2 
+}
+.project-description li {
+  @apply list-disc ml-6 pb-1
 }
