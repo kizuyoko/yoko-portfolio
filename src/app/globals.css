@@ -185,3 +185,9 @@ button:disabled, button:disabled:hover {
   outline: none;
   @apply border-2;
 } 
+.project-description h2 {
+  @apply pt-2 
+}
+.project-description ul, ol {
+  @apply pb-2 
+}

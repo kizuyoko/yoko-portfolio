@@ -4,13 +4,40 @@ export const projects: Project[] = [
   {
     title: "PokeCheck",
     description: (
-      <>
+      <article className="project-description">
+        <h2>Overview</h2>
         <p>
-          PokeCheck is a responsive Pokémon matchup checker that allows users to search for Pokémon, explore type effectiveness, and save their favorites. Built with TypeScript and Next.js, the app prioritizes speed, accessibility, and user experience. It fetches real-time data from the official PokéAPI using TanStack Query and Axios. The project includes unit tests with Jest, UI documentation with Storybook, and has been performance-audited with Lighthouse — achieving top scores on both desktop and mobile.  
+          PokeCheck is a Pokémon matchup checker that allows users to search for Pokémon and check type effectiveness in battles. The app is designed to be fast, accessible, and user-friendly. For more details, see the PokeCheck Project Plan.
         </p>
-      </>
+        <h2>Achievement</h2>
+        <p>
+          PokeCheck scored 100 on the Lighthouse test! View the result. 100 points on both desktop and mobile for the homepage and search results page in Lighthouse performance audits! While the detail page on mobile scored 96 points, I am thrilled with the overall optimization, especially for key pages.
+        </p>
+        <h2>Features</h2>
+        <ul>
+          <li><b>Home Page:</b> Displays featured Pokémon and a search bar.</li>
+          <li><b>Search Functionality:</b> Users can search for Pokémon by name.</li>
+          <li><b>Pokémon Details:</b> View weight, height, stats, type, and abilities.</li>
+          <li><b>Type Details:</b> Check type effectiveness, Pokémon, and move.</li>
+          <li><b>Favorite Functionality:</b> Users can add/remove Pokémon to favorites with a heart icon. Favorite list is persisted via localStorage.</li>
+          <li><b>Favorite List Page:</b> View all your favorited Pokémon in one place.</li>
+          <li><b>Responsive Design:</b> Optimized for both desktop and mobile.</li>
+        </ul>
+        <h2>Tech Stack</h2>
+        <ul>
+          <li><b>WireFrame:</b> Figma</li>
+          <li><b>Deployment:</b> Vercel</li>
+          <li><b>Language:</b> TypeScript</li>
+          <li><b>Styling:</b> Tailwind CSS</li>
+          <li><b>State Management:</b> Redux Toolkit</li>
+          <li><b>API Requests:</b> Axios, TanStack Query</li>
+          <li><b>Component Documentation:</b> Storybook</li>
+          <li><b>Testing:</b> Jest (unit testing)</li>
+          <li><b>Performance Testing, Accessibility:</b> Lighthouse, Wave</li>
+        </ul>
+      </article>
     ),
-    techStack: ["Next.js", "TypeScript", "TailwindCSS", "Axios", "Jest", "Storybook"],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Axios", "Jest", "Storybook", "React.js", "Figma", "Vercel", "Redux", "Tanstack Query", "Lighthouse", "Wave", "Responsive Design", "API"],
     image: "pokecheck.png",
     demo: "https://pokecheck-two.vercel.app/",
     github: "https://github.com/kizuyoko/pokecheck",
