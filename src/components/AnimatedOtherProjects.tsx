@@ -51,7 +51,8 @@ export default function AnimatedOtherProjects() {
             >
               <Image 
                 src={`/projects/${project.image}`}
-                alt={project.title}
+                alt="" 
+                aria-hidden="true"
                 width="200"
                 height="200"
                 priority={index === 0}
