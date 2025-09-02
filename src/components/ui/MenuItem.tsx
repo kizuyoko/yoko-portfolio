@@ -25,14 +25,18 @@ export const MenuItem = ({ href, src, name, ariaLabel, width, height }: MenuItem
       aria-label={ariaLabel}
     >
       <Image
-        aria-hidden
-        src={src}
-        alt={name}
-        width={width}
-        height={height}
-        className="transition-transform duration-200 group-hover:scale-110 dark:invert"
+      aria-hidden
+      src={src}
+      alt={name}
+      width={width}
+      height={height}
+      className="transition-transform duration-200 group-hover:scale-110 dark:invert"
       />
-      <span className={`menu-item ${isActive ? 'border-b' : ''}`}>{name}</span>
+      <span
+      className={`menu-item ${isActive ? 'border-b' : ''} group-hover:border-b`}
+      >
+      {name}
+      </span>
     </Link>
   );
 };
