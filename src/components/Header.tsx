@@ -1,6 +1,5 @@
 'use client';
-import { siteConfig } from "@/app/constants/site";
-import { MenuItem } from "./ui/MenuItem";
+
 import { Logo } from "./ui/Logo";
 import React, { useState } from "react";
 import { HamburgerButton } from "./ui/HamburgerButton";
@@ -8,7 +7,6 @@ import { NavList } from "./ui/NavList";
 
 export const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const src = (name: string) => `/menu-${name.toLowerCase()}.svg`;
   
   return (
     <header className="w-full shadow-sm bg-background">
