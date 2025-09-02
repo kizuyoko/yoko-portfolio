@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef } from "react";
 import { Button } from "@/components/ui/Button";
+import emailjs from "@emailjs/browser";
 
 export const ContactContent = () => {
   const [form, setForm] = useState({
@@ -9,6 +10,7 @@ export const ContactContent = () => {
     message: { value: "", error: "" }
   });
 
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const ref = useRef<HTMLFormElement>(null);
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -27,12 +29,28 @@ export const ContactContent = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Form Submitted");
-    if (ref.current) {
-      const formData = new FormData(ref.current);
-      alert("Form Data Submitted: " + JSON.stringify(Object.fromEntries(formData)));
+
+    if (!ref.current) {
+      return;
+    }
+
+    setStatus("sending");
+
+    try {
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        ref.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+
+      setStatus("success");
+      handleClear();
+    } catch (err) {
+      console.error(err);
+      setStatus("error");
     }
   };
   
@@ -48,8 +66,9 @@ export const ContactContent = () => {
     <>
       <h2 className="mt-8 mb-2">Send a Message</h2>
       <p>Otherwise, you can send me a message with this form.</p>
-      <p className="error-text">This form is not ready</p>
-      <form onSubmit={handleSubmit} className="w-full">
+       {status === "success" && <h3 className="success-text">Message sent successfully!</h3>}
+        {status === "error" && <h3 className="error-text">Failed to send. Please try again.</h3>}
+      <form ref={ref} onSubmit={handleSubmit} className="w-full">
         <div className="form-container">
           <label 
             htmlFor="name"
@@ -104,6 +123,7 @@ export const ContactContent = () => {
             type="submit"
           >Submit</Button>
         </div>
+       
       </form>
     </>
   );
