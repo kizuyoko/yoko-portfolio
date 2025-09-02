@@ -10,6 +10,7 @@ type ButtonProps = {
   ariaLabel?: string;
   isExternal?: boolean;
   disabled? :boolean;
+  type?: "button" | "submit" | "reset";
 };
 
 export const Button = ({
@@ -20,6 +21,7 @@ export const Button = ({
   ariaLabel,
   isExternal,
   disabled = false,
+  type = "button"
 }: ButtonProps) => {
 
   if (href) {
@@ -52,7 +54,7 @@ export const Button = ({
     <button 
       onClick={onClick} 
       className={`button ${className}`} 
-      type="button"
+      type={type}
       disabled={disabled}
     >
       {children}

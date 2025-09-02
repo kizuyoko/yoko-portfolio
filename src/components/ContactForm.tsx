@@ -29,6 +29,7 @@ export const ContactContent = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    alert("Form Submitted");
     if (ref.current) {
       const formData = new FormData(ref.current);
       alert("Form Data Submitted: " + JSON.stringify(Object.fromEntries(formData)));
@@ -98,7 +99,10 @@ export const ContactContent = () => {
         </div>
         <div className="flex flex-row justify-end w-full gap-4 mt-4 mb-8">
           <Button onClick={handleClear}>Clear</Button>
-          <Button disabled={!form.name.value || !form.email.value || !form.message.value}>Submit</Button>
+          <Button 
+            disabled={!form.name.value || !form.email.value || !form.message.value}
+            type="submit"
+          >Submit</Button>
         </div>
       </form>
     </>

@@ -194,3 +194,7 @@ button:disabled, button:disabled:hover {
 .project-description li {
   @apply list-disc ml-6 pb-1
 }
+
+form button:not(:disabled):hover {
+  @apply cursor-pointer
+}
