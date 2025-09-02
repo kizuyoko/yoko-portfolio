@@ -44,7 +44,8 @@ export const AnimatedProject = ({
           src={`/projects/${image}`}
           width={640}
           height={445}
-          alt={title}
+          alt="" 
+          aria-hidden="true"
           priority
           className="mt-2 shadow sm:mt-6"
         />

@@ -21,7 +21,8 @@ export default function TopProjectThumbnail({ title, image, techStack, index  }:
           src={`/projects/${image}`}
           width={640}
           height={445}
-          alt={title}
+          alt="" 
+          aria-hidden="true"
           className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           priority={index === 0}
         />
