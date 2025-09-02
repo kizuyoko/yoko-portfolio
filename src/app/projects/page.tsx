@@ -11,7 +11,6 @@ export default function ProjectsPage() {
   return (
     <section>
       <Title>Projects</Title>
-      <p className="error-text">⚠️ Under Construction - Project content is still being developed. More details will be added soon!</p>
       <AnimatedProjects />
     </section>  
   );
