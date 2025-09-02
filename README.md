@@ -57,7 +57,6 @@ Live on Vercel, [View Site](https://yoko-portfolio-kappa.vercel.app/)
 - feature/projects (detail pages)
 - feature/contact (contact form)
 - enhancement/responsive (hamburger menu)
-- theme/dark-mode
 
 ## Getting Started
 
