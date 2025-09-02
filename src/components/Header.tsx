@@ -6,23 +6,25 @@ export const Header = () => {
   const src = (name: string) => `/menu-${name.toLowerCase()}.svg`;
   
   return (
-    <header className="flex items-center justify-between w-full gap-6 p-4 shadow-sm bg-background">
-      <Logo className="flex-shrink-0" />
-      <nav className="items-center hidden gap-6 sm:flex">
-        {
-          siteConfig.nav.map(item => (
-            <MenuItem
-              key={item.name}
-              href={item.href}
-              src={src(item.name)} 
-              name={item.name} 
-              ariaLabel={`Go to ${item.name} page`}
-              width={24}
-              height={24}
-            />
-          ))
-        }
-      </nav>
+    <header className="w-full shadow-sm bg-background">
+      <div className="flex items-center justify-between w-full max-w-screen-xl gap-6 p-4 mx-auto sm:px-8">
+        <Logo className="flex-shrink-0" />
+        <nav className="items-center hidden gap-6 sm:flex">
+          {
+            siteConfig.nav.map(item => (
+              <MenuItem
+                key={item.name}
+                href={item.href}
+                src={src(item.name)} 
+                name={item.name} 
+                ariaLabel={`Go to ${item.name} page`}
+                width={24}
+                height={24}
+              />
+            ))
+          }
+        </nav>
+      </div>
     </header>
   );
 }
