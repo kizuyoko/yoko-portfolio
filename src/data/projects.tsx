@@ -66,7 +66,7 @@ export const projects: Project[] = [
         <ul>
           <li>Dynamic form with validation</li>
           <li>Generate invoices with customizable fields</li>
-          <li>Export invoices as PDF</li>
+          <li>Export invoices as PDF with html2pdf.js.</li>
           <li>Responsive design for both desktop and mobile</li>
           <li>Simple and clean UI, built with reusable components</li>
           <li>Planned features: authentication and invoice history</li>
@@ -95,7 +95,7 @@ export const projects: Project[] = [
         </ul>
       </article>
     ),
-    techStack: ['Vue.js', 'Nuxt.js', 'TypeScript', 'Vuex', 'LightHouse', 'Wave', 'Jest', 'Cypress', 'TanStack Query', 'Axios', 'Tailwind', 'Storybook', 'Vercel', 'Figma', 'EmailJS'],
+    techStack: ['Vue.js', 'Nuxt.js', 'TypeScript', 'Vuex', 'LightHouse', 'Wave', 'Jest', 'Cypress', 'TanStack Query', 'Axios', 'Tailwind', 'Storybook', 'Vercel', 'Figma', 'html2pdf.js'],
     image: "quickinvoice.png",
     demo: 'https://quick-invoice-eight.vercel.app',
     github: 'https://github.com/kizuyoko/quick-invoice',
@@ -147,7 +147,7 @@ export const projects: Project[] = [
         </ul>
       </article>
     ),
-    techStack: ["Next.js", "TypeScript", "TailwindCSS", "React.js", "Figma", "Vercel", "Responsive Design", "Dark Mode", "Lighthouse", "sitemap.xml", "robots.txt", "GitHub Actions"],
+    techStack: ["Next.js", "TypeScript", "TailwindCSS", "React.js", "Figma", "Vercel", "Responsive Design", "Dark Mode", "Lighthouse", "sitemap.xml", "robots.txt", "GitHub Actions", "EmailJS"],
     image: "portfolio.png",
     demo: "https://yoko-portfolio-kappa.vercel.app/",
     github: "https://github.com/kizuyoko/yoko-portfolio",
