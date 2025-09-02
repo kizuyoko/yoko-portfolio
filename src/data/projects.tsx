@@ -95,7 +95,7 @@ export const projects: Project[] = [
         </ul>
       </article>
     ),
-    techStack: ['Vue.js', 'Nuxt.js', 'TypeScript', 'Vuex', 'LightHouse', 'Wave', 'Jest', 'Cypress', 'TanStack Query', 'Axios', 'Tailwind', 'Storybook', 'Vercel', 'Figma'],
+    techStack: ['Vue.js', 'Nuxt.js', 'TypeScript', 'Vuex', 'LightHouse', 'Wave', 'Jest', 'Cypress', 'TanStack Query', 'Axios', 'Tailwind', 'Storybook', 'Vercel', 'Figma', 'EmailJS'],
     image: "quickinvoice.png",
     demo: 'https://quick-invoice-eight.vercel.app',
     github: 'https://github.com/kizuyoko/quick-invoice',
@@ -132,6 +132,7 @@ export const projects: Project[] = [
           <li>Dark mode</li>
           <li>SEO-ready with sitemap.xml and robots.txt</li>
           <li>Minimal GitHub Actions workflow that runs npm run lint automatically on each push and pull request to the main branch.</li>
+          <li>Contact form integrated with EmailJS</li>
         </ul>
         <h2>Tech Stack</h2>
         <ul>
@@ -142,6 +143,7 @@ export const projects: Project[] = [
           <li><b>Deployment:</b> Vercel</li>
           <li><b>Performance & SEO:</b> Lighthouse, Sitemap</li>
           <li><b>CI/CD:</b> GitHub Actions</li>
+          <li><b>Email Service:</b> EmailJS</li>
         </ul>
       </article>
     ),

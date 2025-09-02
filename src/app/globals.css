@@ -194,3 +194,11 @@ button:disabled, button:disabled:hover {
 .project-description li {
   @apply list-disc ml-6 pb-1
 }
+
+form button:not(:disabled):hover {
+  @apply cursor-pointer
+}
+
+h3.success-text, h3.error-text {
+  @apply text-xl py-2;
+}
