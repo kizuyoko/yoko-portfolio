@@ -15,7 +15,8 @@ export const SkillItem = ({ name, home, image, darkInvert }: skillItemProps) => 
         image ? (
           <Image
             src={image}
-            alt={name}
+            alt="" 
+            aria-hidden="true"
             width={48}
             height={48}
             className="inline-block"
@@ -28,7 +29,8 @@ export const SkillItem = ({ name, home, image, darkInvert }: skillItemProps) => 
             <div className="flex flex-col items-center gap-1 mb-1 mr-3 max-w-16">
             <Image
               src={image}
-              alt={name}
+              alt="" 
+              aria-hidden="true"
               width={38}
               height={38}  
               className={`inline-block ${darkInvert ? "dark:invert" : ""}`}

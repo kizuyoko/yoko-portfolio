@@ -3,7 +3,11 @@ import Link from "next/link";
 
 export const Logo = ({ className }: { className?: string }) => {
   return (
-    <Link href="/" className={`flex items-center justify-center ${className}`}>
+    <Link 
+      href="/" 
+      className={`flex items-center justify-center ${className}`}
+      aria-label="Home"
+    >
       <Image
         src="/logo-y.svg"
         alt="Y"
