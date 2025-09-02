@@ -25,9 +25,9 @@ export const MenuItem = ({ href, src, name, ariaLabel, width, height }: MenuItem
       aria-label={ariaLabel}
     >
       <Image
-      aria-hidden
+      aria-hidden="true"
       src={src}
-      alt={name}
+      alt=""
       width={width}
       height={height}
       className="transition-transform duration-200 group-hover:scale-110 dark:invert"
