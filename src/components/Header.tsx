@@ -19,7 +19,11 @@ export const Header = () => {
       </div>
       {
         navOpen && (
-          <nav className="items-center sm:hidden">
+          <nav 
+            className="items-center sm:hidden"
+            id="mobile-nav"
+            aria-hidden={!navOpen}
+          >
             <div className="mobile-nav">
               <NavList />
           </div>
