@@ -11,7 +11,7 @@ export const Logo = ({ className }: { className?: string }) => {
     >
       <Image
         src="/logo-y.svg"
-        alt=""
+        alt="Y"
         width={22}
         height={22}
         className="dark:invert"
