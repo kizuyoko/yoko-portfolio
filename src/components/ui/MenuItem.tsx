@@ -22,7 +22,7 @@ export const MenuItem = ({ href, src, name, ariaLabel, width, height }: MenuItem
       className="flex items-center gap-2 transition-all duration-200 group text-link hover:text-accent"
       href={href}
       rel="noopener noreferrer"
-      aria-label={ariaLabel}
+      aria-label={`Go to ${ariaLabel} page`}
     >
       <Image
       aria-hidden="true"
