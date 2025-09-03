@@ -66,8 +66,18 @@ export const ContactContent = () => {
     <>
       <h2 className="mt-8 mb-2">Send a Message</h2>
       <p>Otherwise, you can send me a message with this form.</p>
-       {status === "success" && <h3 className="success-text">Message sent successfully!</h3>}
-        {status === "error" && <h3 className="error-text">Failed to send. Please try again.</h3>}
+      {
+      status === "success" && 
+        <h3 className="success-text" aria-live="polite">
+          Message sent successfully!
+        </h3>
+      }
+      {
+        status === "error" && 
+        <h3 className="error-text" aria-live="polite">
+          Failed to send. Please try again.
+        </h3>
+      }
       <form ref={ref} onSubmit={handleSubmit} className="w-full">
         <div className="form-container">
           <label 
@@ -82,8 +92,9 @@ export const ContactContent = () => {
               value={form.name.value}
               onChange={onChangeHandler}
               className={form.name.error ? "error-input" : form.name.value ? "success-border" : ""}
+              aria-describedby={form.name.error ? "name-error" : undefined}
             />
-            <p className="error-text">{form.name.error}</p>
+            <p id="name-error" className="error-text">{form.name.error}</p>
           </div>
         </div>
         <div className="form-container">
@@ -99,8 +110,9 @@ export const ContactContent = () => {
               value={form.email.value}
               onChange={onChangeHandler}
               className={form.email.error ? "error-input" : form.email.value ? "success-border" : ""}
+              aria-describedby={form.email.error ? "email-error" : undefined}
             />
-            <p className="error-text">{form.email.error}</p>
+            <p id="email-error" className="error-text">{form.email.error}</p>
           </div>
         </div>
         <div className="form-container">
@@ -115,8 +127,9 @@ export const ContactContent = () => {
               className={`h-20 border ${form.message.error ? "error-input" : form.message.value ? "success-border" : ""}`}
               value={form.message.value}
               onChange={onChangeHandler}
+              aria-describedby={form.message.error ? "message-error" : undefined}
             ></textarea>
-            <p className="error-text">{form.message.error}</p>
+            <p id="message-error" className="error-text">{form.message.error}</p>
           </div>
         </div>
         <div className="flex flex-row justify-end w-full gap-4 mt-4 mb-8">
