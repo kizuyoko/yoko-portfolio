@@ -77,6 +77,7 @@ export const ContactContent = () => {
           <div>
             <input
               name="name"
+              id="name"
               type="text"
               value={form.name.value}
               onChange={onChangeHandler}
@@ -94,6 +95,7 @@ export const ContactContent = () => {
             <input 
               name="email"
               type="text"
+              id="email"
               value={form.email.value}
               onChange={onChangeHandler}
               className={form.email.error ? "error-input" : form.email.value ? "success-border" : ""}
@@ -109,6 +111,7 @@ export const ContactContent = () => {
           <div>
             <textarea
               name="message"
+              id="message"
               className={`h-20 border ${form.message.error ? "error-input" : form.message.value ? "success-border" : ""}`}
               value={form.message.value}
               onChange={onChangeHandler}

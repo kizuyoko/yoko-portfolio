@@ -6,7 +6,7 @@ export const Logo = ({ className }: { className?: string }) => {
     <Link 
       href="/" 
       className={`flex items-center justify-center ${className}`}
-      aria-hidden="true"
+      aria-label="Home"
     >
       <Image
         src="/logo-y.svg"
