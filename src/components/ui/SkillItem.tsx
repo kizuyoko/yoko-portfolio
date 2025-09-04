@@ -26,18 +26,18 @@ export const SkillItem = ({ name, home, image, darkInvert }: skillItemProps) => 
         ) : null
       ) : (
         image ? (
-            <div className="flex flex-col items-center gap-1 mb-1 mr-3 max-w-16">
-            <Image
-              src={image}
-              alt="" 
-              aria-hidden="true"
-              width={38}
-              height={38}  
-              className={`inline-block ${darkInvert ? "dark:invert" : ""}`}
-              aria-label={`Skill icon for ${name}`}
-              role="img"
-            />
-            <span className="text-sm text-center">{name}</span>
+            <div className="flex flex-col items-center gap-1 mb-1 mr-3 text-sm text-center max-w-16">
+              <Image
+                src={image}
+                alt="" 
+                aria-hidden="true"
+                width={38}
+                height={38}  
+                className={`inline-block ${darkInvert ? "dark:invert" : ""}`}
+                aria-label={`Skill icon for ${name}`}
+                role="img"
+              />
+              {name}
             </div>
            
         ) : (

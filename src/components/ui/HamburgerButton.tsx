@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 interface Props {
   navOpen: boolean;
@@ -18,7 +17,7 @@ export const HamburgerButton: React.FC<Props> = ({ navOpen, toggleNav }) => {
     const firstElement = focusableElements[0] as HTMLElement;
     const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
 
-    const handleTab = (e: KeyboardEvent) => {
+    const handleKeyDown  = (e: KeyboardEvent) => {
       if (e.key !== "Tab") return;
 
       if (e.shiftKey) {
@@ -34,9 +33,9 @@ export const HamburgerButton: React.FC<Props> = ({ navOpen, toggleNav }) => {
       }
     };
 
-    document.addEventListener("keydown", handleTab);
-    return () => document.removeEventListener("keydown", handleTab);
-  }, [navOpen]);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [navOpen, toggleNav]);
 
   return (
     <div className="items-center sm:hidden">
