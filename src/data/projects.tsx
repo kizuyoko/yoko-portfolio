@@ -106,26 +106,37 @@ export const projects: Project[] = [
       <article className="project-description">
         <h2>Overview</h2>
         <p>
-          This portfolio site has been completely rebuilt from scratch to reflect my recent growth in modern frontend technologies including React, Next.js, and TypeScript. You can still view my previous portfolio <a className="underline" href="https://portfolioyoko.vercel.app/" target="_blank" rel="noopener noreferrer">here</a> to see how far I have come. Feel free to explore my updated work — and check back soon for further improvements!</p>
-        <p>
-          This site was created using my custom <a className="underline" href="https://github.com/kizuyoko/boilerplate-react-nextjs-typescript-tailwind/" target="_blank" rel="noopener noreferrer">boilerplate</a>. You are welcome to clone it and use it as a starting point for your own projects!
+          This portfolio site has been completely rebuilt from scratch to reflect my recent growth in modern frontend technologies including React, Next.js, and TypeScript.</p>
+          
+          <p>You can still view my previous portfolio <a className="underline" href="https://portfolioyoko.vercel.app/" target="_blank" rel="noopener noreferrer">here</a> to see how far I have come. Feel free to explore my updated work — and check back soon for further improvements!</p>
+
+          <p>In this updated version, I have also focused on <strong>performance and accessibility improvements</strong>, including Lighthouse optimization, WAVE evaluations, and the integration of Friendly Captcha for WCAG-compliant and privacy-friendly form validation. </p>
+
+          <p>This site was created using my custom <a className="underline" href="https://github.com/kizuyoko/boilerplate-react-nextjs-typescript-tailwind/" target="_blank" rel="noopener noreferrer">boilerplate</a>. You are welcome to clone it and use it as a starting point for your own projects!
         </p>
         <h2>Improvements from the last version</h2>
         <ul>
-          <li>Design from scratch with Figma</li>
+          <li>Design from scratch with <a className="underline" href="https://www.figma.com/design/jawKCOfRFJjaRytr5RtJDm/Yoko-Portfolio?node-id=63-38&t=e8XsOdkiLwFETs5y-1" target="_blank" rel="noopener noreferrer">Figma</a></li>
           <li>Improved page structure with Next.js routing and better performance</li>
           <li>Categorized skills section for easier readability</li>
           <li>Project section with more detailed descriptions</li>
           <li>More complex responsive design, now that the number of pages has increased</li>
           <li>Documentation in README.md and feature branches per pages while development</li>
           <li>Introduced better Git workflow by managing branches based on features and development stages.</li>
+          <li>Accessibility and performance based on Lighthouse, WAVE, and Friendly Captcha evaluations.</li>
+          <li>Implemented keyboard navigation with visible focus rings on interactive elements.</li>
+          <li>Enhanced color contrast and applied proper ARIA attributes for better accessibility compliance.</li>
+          <li>Optimized page performance and Core Web Vitals scores.</li>
+          <li>Introduced Friendly Captcha to provide WCAG-compliant and privacy-friendly form validation.</li>
         </ul>
         <h2>Features</h2>
         <ul>
           <li>Fully designed in Figma</li>
           <li>Built with React 18 and Next.js App Router</li>
           <li>Written in TypeScript</li>
+          <li>Integrated with Vercel for seamless deployment</li>
           <li>Tailwind CSS setup with responsive and dark mode support</li>
+          <li>Responsive design that works seamlessly on mobile and desktop.</li>
           <li>Dynamic site settings stored in src/app/constants/site.ts</li>
           <li>Two layouts: Centered layout for homepage and 404. Two-column layout with header and right-side menu for other pages.</li>
           <li>Custom 404 page</li>
@@ -133,6 +144,8 @@ export const projects: Project[] = [
           <li>SEO-ready with sitemap.xml and robots.txt</li>
           <li>Minimal GitHub Actions workflow that runs npm run lint automatically on each push and pull request to the main branch.</li>
           <li>Contact form integrated with EmailJS</li>
+          <li>Accessible navigation with focus indicators and ARIA labels.</li>
+          <li>Performance-optimized images and lazy loading for faster page rendering.</li>
         </ul>
         <h2>Tech Stack</h2>
         <ul>
@@ -141,13 +154,13 @@ export const projects: Project[] = [
           <li><b>Styling:</b> Tailwind CSS</li>
           <li><b>Design:</b> Figma</li>
           <li><b>Deployment:</b> Vercel</li>
-          <li><b>Performance & SEO:</b> Lighthouse, Sitemap</li>
+          <li><b>Performance & SEO:</b> Lighthouse, Wave, Friendly Captcha, Sitemap</li>
           <li><b>CI/CD:</b> GitHub Actions</li>
           <li><b>Email Service:</b> EmailJS</li>
         </ul>
       </article>
     ),
-    techStack: ["Next.js", "TypeScript", "TailwindCSS", "React.js", "Figma", "Vercel", "Responsive Design", "Dark Mode", "Lighthouse", "sitemap.xml", "robots.txt", "GitHub Actions", "EmailJS"],
+    techStack: ["Next.js", "TypeScript", "TailwindCSS", "React.js", "Figma", "Vercel", "Responsive Design", "Dark Mode", "Lighthouse", "Wave", "Friendly Captcha", "WCAG", "sitemap.xml", "robots.txt", "GitHub Actions", "EmailJS"],
     image: "portfolio.png",
     demo: "https://yoko-portfolio-kappa.vercel.app/",
     github: "https://github.com/kizuyoko/yoko-portfolio",

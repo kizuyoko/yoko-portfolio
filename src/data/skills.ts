@@ -109,6 +109,10 @@ export const skills: Skill[] = [
     name: "Wave",
     image: "/skills/wave.svg",
   }, {
+    category: "Performance & Accessibility",
+    name: "Friendly Captcha",
+    image: "/skills/friendly-captcha.svg",
+  }, {
     category: "Deployment & Hosting",
     name: "Vercel",
     image: "/skills/vercel.svg",

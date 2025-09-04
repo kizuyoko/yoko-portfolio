@@ -2,9 +2,11 @@
 
 Hi! This is Yoko, a Frontend Developer.
 
-This portfolio site has been completely rebuilt from scratch to reflect my recent growth in modern frontend technologies including React, Next.js, and TypeScript.  
+This portfolio site has been completely rebuilt from scratch to reflect my recent growth in modern frontend technologies including React, Next.js, and TypeScript.
 
 You can still view my previous portfolio [here](https://portfolioyoko.vercel.app) to see how far I’ve come.
+
+In this updated version, I have also focused on performance and accessibility improvements, including Lighthouse optimization, WAVE evaluations, and the integration of Friendly Captcha for WCAG-compliant and privacy-friendly form validation. 
 
 Feel free to explore my updated work — and check back soon for further improvements!
 
@@ -18,6 +20,11 @@ This site was created using my custom [boilerplate](https://boilerplate-react-ne
 - More complex responsive design, now that the number of pages has increased
 - Documentation in README.md and feature branches per pages while development
 - Introduced better Git workflow by managing branches based on features and development stages.
+- Accessibility and performance based on Lighthouse, WAVE, and Friendly Captcha evaluations.
+- Implemented keyboard navigation with visible focus rings on interactive elements.
+- Enhanced color contrast and applied proper ARIA attributes for better accessibility compliance.
+- Optimized page performance and Core Web Vitals scores.
+- Introduced Friendly Captcha to provide WCAG-compliant and privacy-friendly form validation.
 
 ## Screenshot
 
@@ -39,6 +46,9 @@ Live on Vercel, [View Site](https://yoko-portfolio-kappa.vercel.app/)
 - Dark mode
 - SEO-ready with sitemap.xml and robots.txt
 - Minimal GitHub Actions workflow that runs `npm run lint` automatically on each push and pull request to the `main` branch. 
+- Contact form integrated with EmailJS
+- Accessible navigation with focus indicators and ARIA labels.
+- Performance-optimized images and lazy loading for faster page rendering.
 
 ## Tech Stack
 
@@ -47,7 +57,9 @@ Live on Vercel, [View Site](https://yoko-portfolio-kappa.vercel.app/)
 - **Styling**: Tailwind CSS
 - **Design**: Figma
 - **Deployment**: Vercel
+- **Performance & SEO**: Lighthouse, Wave, Friendly Captcha, Sitemap
 - **CI/CD**: GitHub Actions
+- **Email Service**: EmailJS
 
 ## GitHub Branches
 - setup (Readme, enviroment, font, basic colors, favicon, 404) 
@@ -57,6 +69,7 @@ Live on Vercel, [View Site](https://yoko-portfolio-kappa.vercel.app/)
 - feature/projects (detail pages)
 - feature/contact (contact form)
 - enhancement/responsive (hamburger menu)
+- enhancement/accessibility (accessibilty, performance)
 
 ## Getting Started
 
