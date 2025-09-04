@@ -33,24 +33,28 @@ export const AnimatedProject = ({
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <Title>{title}</Title>
-
+      
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5 }}
       >
-        <Image
-          src={`/projects/${image}`}
-          width={640}
-          height={445}
-          alt="" 
-          aria-hidden="true"
-          priority
-          className="mt-2 shadow sm:mt-6"
-        />
+        <a 
+          href={demo}
+          aria-label={`View demo of ${title}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block overflow-hidden shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <Image
+            src={`/projects/${image}`}
+            width={640}
+            height={445}
+            alt=""
+          />
+        </a>
       </motion.div>
-
       <motion.div
         className="flex flex-wrap gap-2 mt-2"
         initial={{ opacity: 0 }}
@@ -60,13 +64,6 @@ export const AnimatedProject = ({
         {techStack.map((tech) => (
           <SkillItem key={tech} name={tech} />
         ))}
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.4 }}
-      >
-        {typeof description === "string" ? <p>{description}</p> : description}
       </motion.div>
       <motion.div
         className="flex items-center justify-center gap-2 mb-6"
@@ -80,7 +77,15 @@ export const AnimatedProject = ({
         <Button href={github} ariaLabel={`GitHub of ${title}`}>
           GitHub
         </Button>
-      </motion.div>  
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.4 }}
+      >
+        {typeof description === "string" ? <p>{description}</p> : description}
+      </motion.div>
+        
     </motion.section>
   );
 };
