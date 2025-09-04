@@ -131,7 +131,7 @@ export const projects: Project[] = [
         </ul>
         <h2>Features</h2>
         <ul>
-          <li>Fully designed in Figma</li>
+          <li>Fully designed in Figma using a Design System</li>
           <li>Built with React 18 and Next.js App Router</li>
           <li>Written in TypeScript</li>
           <li>Integrated with Vercel for seamless deployment</li>
@@ -160,7 +160,7 @@ export const projects: Project[] = [
         </ul>
       </article>
     ),
-    techStack: ["Next.js", "TypeScript", "TailwindCSS", "React.js", "Figma", "Vercel", "Responsive Design", "Dark Mode", "Lighthouse", "Wave", "Friendly Captcha", "WCAG", "sitemap.xml", "robots.txt", "GitHub Actions", "EmailJS"],
+    techStack: ["Next.js", "TypeScript", "TailwindCSS", "React.js", "Figma", "Vercel", "Responsive Design", "Design System", "Dark Mode", "Lighthouse", "Wave", "Friendly Captcha", "WCAG", "sitemap.xml", "robots.txt", "GitHub Actions", "EmailJS"],
     image: "portfolio.png",
     demo: "https://yoko-portfolio-kappa.vercel.app/",
     github: "https://github.com/kizuyoko/yoko-portfolio",
