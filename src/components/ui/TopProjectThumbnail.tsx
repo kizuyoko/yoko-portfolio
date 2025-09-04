@@ -12,11 +12,14 @@ export default function TopProjectThumbnail({ title, image, techStack, index  }:
   return (
     <article
       key={slugify(title)}
-      className="relative overflow-hidden transition-shadow duration-300 bg-white shadow-sm hover:shadow-xl group"
+      className="relative transition-shadow duration-300 bg-white shadow-sm hover:shadow-xl group"
     >
       <Link 
         href={`/projects/${slugify(title)}`}
-        aria-label={`View project: ${title}`}>
+        aria-label={`View project: ${title}`}
+        className="relative group"
+      >
+        <span className="absolute inset-0 rounded pointer-events-none group-focus:ring-2 group-focus:ring-blue-500"></span>
         <Image
           src={`/projects/${image}`}
           width={640}
@@ -26,7 +29,7 @@ export default function TopProjectThumbnail({ title, image, techStack, index  }:
           className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           priority={index === 0}
         />
-        <div className="absolute bottom-0 left-0 flex flex-col w-full px-4 py-2 bg-black opacity-70">
+        <div className="absolute bottom-0 left-0 flex flex-col w-full px-4 py-2 bg-black opacity-70 group-focus-within:bg-opacity-100">
           <h3 className="font-semibold text-white font-sm">{title}</h3>
           <p className="text-sm text-white truncate">{techStack.join(', ')}</p>
         </div>
