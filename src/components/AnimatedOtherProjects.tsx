@@ -49,16 +49,24 @@ export default function AnimatedOtherProjects() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <Image 
-                src={`/projects/${project.image}`}
-                alt="" 
-                aria-hidden="true"
-                width="200"
-                height="200"
-                priority={index === 0}
-                className="object-contain object-top"
-              />
-            </motion.div>  
+              <a
+                href={project.demo}
+                aria-label={`View demo of ${project.title}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block overflow-hidden shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <Image
+                  src={`/projects/${project.image}`}
+                  alt=""
+                  aria-hidden="true"
+                  width="200"
+                  height="200"
+                  priority={index === 0}
+                  className="object-contain object-top"
+                />
+              </a>
+            </motion.div>
             <div className="flex-1">
               <h2 className="hidden sm:block">{project.title}</h2>
               <motion.div
@@ -73,12 +81,20 @@ export default function AnimatedOtherProjects() {
                     <SkillItem key={tech} name={tech} />
                   ))
                 }
+              </motion.div>
+              <motion.div
+                className="flex flex-wrap gap-2 mt-2"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2, duration: 0.4 }}
+              >
+                <div className="flex gap-4 mt-1">
+                  <Button href={project.demo}>Demo</Button>
+                  <Button href={project.github}>GitHub</Button>
+                </div>
               </motion.div>  
               <p className="pt-4 pb-2">{project.description}</p>   
-              <div className="flex gap-4">
-                <Button href={project.demo}>Demo</Button>
-                <Button href={project.github}>GitHub</Button>
-              </div>
             </div>
           </div>  
           {index !== otherProjects.length - 1 && <hr />} 
