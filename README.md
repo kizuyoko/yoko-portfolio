@@ -36,7 +36,7 @@ Live on Vercel, [View Site](https://yoko-portfolio-kappa.vercel.app/)
 
 ## Features
 
-- Fully designed in [Figma](https://www.figma.com/design/jawKCOfRFJjaRytr5RtJDm/Yoko-Portfolio?node-id=63-38&t=e8XsOdkiLwFETs5y-1)
+- Fully designed in [Figma](https://www.figma.com/design/jawKCOfRFJjaRytr5RtJDm/Yoko-Portfolio?node-id=63-38&t=e8XsOdkiLwFETs5y-1) using a Design System.
 - Built with React 18 and Next.js App Router
 - Written in TypeScript
 - Tailwind CSS setup with responsive and dark mode support
