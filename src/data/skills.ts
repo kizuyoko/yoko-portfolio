@@ -151,29 +151,29 @@ export const skills: Skill[] = [
     image: "/skills/cross-browser.svg",
     darkInvert: true,
   },{
-    category: "Deployment & Version Control",
+    category: "Deployment & Version Control (CI/CD)",
     name: "Vercel",
     image: "/skills/vercel.svg",
     darkInvert: true,
   }, {
-    category: "Deployment & Version Control",
+    category: "Deployment & Version Control (CI/CD)",
     name: "Netlify",
     image: "/skills/netlify.svg",
   }, {
-    category: "Deployment & Version Control",
+    category: "Deployment & Version Control (CI/CD)",
     name: "Firebase",
     image: "/skills/firebase.svg",
   }, {
-    category: "Deployment & Version Control",
+    category: "Deployment & Version Control (CI/CD)",
     name: "GitHub",
     image: "/skills/github.svg",
     darkInvert: true,
   }, {
-    category: "Deployment & Version Control",
+    category: "Deployment & Version Control (CI/CD)",
     name: "GitLab",
     image: "/skills/gitlab.svg",
   }, {
-    category: "Deployment & Version Control",
+    category: "Deployment & Version Control (CI/CD)",
     name: "Bitbucket",
     image: "/skills/bitbucket.svg",
   }, {
