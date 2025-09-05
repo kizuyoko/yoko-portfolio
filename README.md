@@ -19,7 +19,7 @@ This site was created using my custom [boilerplate](https://boilerplate-react-ne
 - Project section with more detailed descriptions
 - More complex responsive design, now that the number of pages has increased
 - Documentation in README.md and feature branches per pages while development
-- Introduced better Git workflow by managing branches based on features and development stages.
+- Introduced better Git workflow by managing branches based on features and development stages, and experimented with GitHub Actions to automate Lint and Build for faster, safer deployments.
 - Accessibility and performance based on Lighthouse, WAVE, and Friendly Captcha evaluations.
 - Implemented keyboard navigation with visible focus rings on interactive elements.
 - Enhanced color contrast and applied proper ARIA attributes for better accessibility compliance.
