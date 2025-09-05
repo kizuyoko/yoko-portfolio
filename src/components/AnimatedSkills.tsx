@@ -32,7 +32,7 @@ export function AnimatedSkills() {
             variants={containerVariants}
           >
             {skills.map(skill => (
-              <motion.li key={skill.name} variants={itemVariants}>
+              <motion.li key={skill.name} variants={itemVariants} className="py-1">
                 <SkillItem name={skill.name} image={skill.image} darkInvert={skill.darkInvert} />
               </motion.li>
             ))}

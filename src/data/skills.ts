@@ -17,6 +17,10 @@ export const skills: Skill[] = [
     home: 1,
   }, {
     category: "Frontend Development",
+    name: "Redux",
+    image: "/skills/redux.svg",
+  },{
+    category: "Frontend Development",
     name: "Next.js",
     image: "/skills/nextjs.svg",
     home: 4,
@@ -28,13 +32,13 @@ export const skills: Skill[] = [
     home: 2,
   }, {
     category: "Frontend Development",
+    name: "Pinia",
+    image: "/skills/pinia.svg",
+  },{
+    category: "Frontend Development",
     name: "Nuxt.js",
     image: "/skills/nuxtjs.svg",
   }, {
-    category: "Frontend Development",
-    name: "Node.js",
-    image: "/skills/nodejs.svg",
-   },  {
     category: "Styling & UI",
     name: "HTML5",
     image: "/skills/html5.svg",
@@ -87,7 +91,21 @@ export const skills: Skill[] = [
     name: "Fetch API",
     image: "/skills/fetch-api.svg",
     darkInvert: true,
-  }, { 
+  }, {
+    category: "API & Data Fetching",
+    name: "JSON",
+    image: "/skills/json.svg",
+    darkInvert: true,
+  },{
+    category: "API & Data Fetching",
+    name: "Node.js",
+    image: "/skills/nodejs.svg",
+  },  {
+    category: "API & Data Fetching",
+    name: "Express.js",
+    image: "/skills/expressjs.svg",
+    darkInvert: true,
+   }, { 
     category: "API & Data Fetching",
     name: "TanStack Query",
     image: "/skills/tanstack-query.svg",
@@ -95,12 +113,7 @@ export const skills: Skill[] = [
     category: "API & Data Fetching",
     name: "Axios",
     image: "/skills/axios.svg",
-  }, {
-    category: "API & Data Fetching",
-    name: "JSON",
-    image: "/skills/json.svg",
-    darkInvert: true,
-  }, {  
+  },  {  
     category: "Performance & Accessibility",
     name: "Lighthouse",
     image: "/skills/lighthouse.svg",
@@ -112,85 +125,110 @@ export const skills: Skill[] = [
     category: "Performance & Accessibility",
     name: "Friendly Captcha",
     image: "/skills/friendly-captcha.svg",
+  },{
+    category: "Performance & Accessibility",
+    name: "WCAG",
+    image: "/skills/wcag.svg",
+    darkInvert: true,
+  },{
+    category: "Performance & Accessibility",
+    name: "Accessibility (a11y)",
+    image: "/skills/a11y.svg",
+    darkInvert: true,
+  },{
+    category: "UX & Design",
+    name: "Responsive",
+    image: "/skills/responsive.svg",
+    darkInvert: true,
+  },{
+    category: "UX & Design",
+    name: "Dark Mode",
+    image: "/skills/dark-mode.svg",
+    darkInvert: true,
   }, {
-    category: "Deployment & Hosting",
+    category: "UX & Design",
+    name: "Cross-Browser",
+    image: "/skills/cross-browser.svg",
+    darkInvert: true,
+  },{
+    category: "Deployment & Version Control",
     name: "Vercel",
     image: "/skills/vercel.svg",
     darkInvert: true,
   }, {
-    category: "Deployment & Hosting",
+    category: "Deployment & Version Control",
     name: "Netlify",
     image: "/skills/netlify.svg",
   }, {
-    category: "Deployment & Hosting",
+    category: "Deployment & Version Control",
     name: "Firebase",
     image: "/skills/firebase.svg",
   }, {
-    category: "Version Control, CI/CD",
+    category: "Deployment & Version Control",
     name: "GitHub",
     image: "/skills/github.svg",
     darkInvert: true,
   }, {
-    category: "Version Control, CI/CD",
+    category: "Deployment & Version Control",
     name: "GitLab",
     image: "/skills/gitlab.svg",
   }, {
-    category: "Version Control, CI/CD",
+    category: "Deployment & Version Control",
     name: "Bitbucket",
     image: "/skills/bitbucket.svg",
   }, {
-    category: "Design & Prototyping",
+    category: "UX & Design",
     name: "Figma",
     image: "/skills/figma.svg",
   }, {
-    category: "Design & Prototyping",
+    category: "UX & Design",
     name: "Storybook",
     image: "/skills/storybook.svg",
   },{
-    category: "Design & Prototyping",
+    category: "UX & Design",
     name: "InVision",
     image: "/skills/invision.svg",
   }, {
-    category: "Design & Prototyping",
+    category: "UX & Design",
     name: "Photoshop",
     image: "/skills/photoshop.svg",
   },  {
-    category: "Design & Prototyping",
+    category: "UX & Design",
     name: "Adobe XD",
     image: "/skills/adobexd.svg",
   },  {
-    category: "Development Tools",
+    category: "Development Tools & Automation",
     name: "npm",
     image: "/skills/npm.svg",
     darkInvert: true,
   }, {
-    category: "Development Tools",
+    category: "Development Tools & Automation",
     name: "Vite",
     image: "/skills/vite.svg",
   }, {
-    category: "Development Tools",
+    category: "Development Tools & Automation",
     name: "Webpack",
     image: "/skills/webpack.svg",
   }, {
-    category: "AI & Automation",
+    category: "Development Tools & Automation",
     name: "ChatGPT",
     image: "/skills/chatgpt.svg",
     darkInvert: true,
   }, {
-    category: "AI & Automation",
+    category: "Development Tools & Automation",
     name: "GitHub Copilot",
     image: "/skills/github-copilot.svg",
     darkInvert: true,
   }, {
-    category: "AI & Automation",
+    category: "Development Tools & Automation",
     name: "Gemini",
     image: "/skills/gemini.svg",
   }, {
-    category: "AI & Automation",
+    category: "Development Tools & Automation",
     name: "Cursor",
     image: "/skills/cursor.svg",
   }, {
-    category: "AI & Automation",
+    category: "Development Tools & Automation",
     name: "VS Code",
     image: "/skills/vscode.svg",
   }, {
@@ -213,5 +251,21 @@ export const skills: Skill[] = [
   }, {
     category: "Agile Methodologies",
     name: "Kanban",
-  }
+  },{
+    category: "Soft Skills",
+    name: "Communication",
+  },{
+    category: "Soft Skills",
+    name: "Collaboration",
+  },{
+    category: "Soft Skills",
+    name: "Problem Solving",
+  },{
+    category: "Soft Skills",
+    name: "Adaptability",
+  },{
+    category: "Soft Skills",
+    name: "Growth Mindset",
+  },
+
 ];  
