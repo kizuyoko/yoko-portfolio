@@ -122,7 +122,7 @@ export const projects: Project[] = [
           <li>Project section with more detailed descriptions</li>
           <li>More complex responsive design, now that the number of pages has increased</li>
           <li>Documentation in README.md and feature branches per pages while development</li>
-          <li>Introduced better Git workflow by managing branches based on features and development stages.</li>
+          <li>Introduced better Git workflow by managing branches based on features and development stages, and experimented with GitHub Actions to automate Lint and Build for faster, safer deployments.</li>
           <li>Accessibility and performance based on Lighthouse, WAVE, and Friendly Captcha evaluations.</li>
           <li>Implemented keyboard navigation with visible focus rings on interactive elements.</li>
           <li>Enhanced color contrast and applied proper ARIA attributes for better accessibility compliance.</li>
