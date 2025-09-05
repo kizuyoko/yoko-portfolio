@@ -95,7 +95,7 @@ export const projects: Project[] = [
         </ul>
       </article>
     ),
-    techStack: ['Vue.js', 'Nuxt.js', 'TypeScript', 'Vuex', 'LightHouse', 'Wave', 'Jest', 'Cypress', 'TanStack Query', 'Axios', 'Tailwind', 'Storybook', 'Vercel', 'Figma', 'html2pdf.js'],
+    techStack: ['Vue.js', 'Pinia', 'Nuxt.js', 'TypeScript', 'Vuex', 'LightHouse', 'Wave', 'Jest', 'Cypress', 'TanStack Query', 'Axios', 'Tailwind', 'Storybook', 'Vercel', 'Figma', 'html2pdf.js'],
     image: "quickinvoice.png",
     demo: 'https://quick-invoice-eight.vercel.app',
     github: 'https://github.com/kizuyoko/quick-invoice',

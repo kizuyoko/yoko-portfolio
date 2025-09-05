@@ -2,39 +2,45 @@ import { Skill } from "@/types/skill";
 
 export const skills: Skill[] = [
   {
-    category: "Frontend Development",
+    category: "Languages & Core",
     name: "JavaScript",
     image: "/skills/javascript.svg",
   }, {
-    category: "Frontend Development",
+    category: "Languages & Core",
     name: "TypeScript",
     image: "/skills/typescript.svg",
     home: 3,
   }, {
-    category: "Frontend Development",
+    category: "Frameworks & Libraries",
     name: "React.js",
     image: "/skills/reactjs.svg",
     home: 1,
   }, {
-    category: "Frontend Development",
+    category: "Frameworks & Libraries",
+    name: "Redux",
+    image: "/skills/redux.svg",
+    home: 1,
+  },{
+    category: "Frameworks & Libraries",
     name: "Next.js",
     image: "/skills/nextjs.svg",
     home: 4,
     darkInvert: true,
   }, {
-    category: "Frontend Development",
+    category: "Frameworks & Libraries",
     name: "Vue.js",
     image: "/skills/vuejs.svg",
     home: 2,
   }, {
-    category: "Frontend Development",
+    category: "Frameworks & Libraries",
+    name: "Pinia",
+    image: "/skills/pinia.svg",
+    home: 2,
+  },{
+    category: "Frameworks & Libraries",
     name: "Nuxt.js",
     image: "/skills/nuxtjs.svg",
   }, {
-    category: "Frontend Development",
-    name: "Node.js",
-    image: "/skills/nodejs.svg",
-   },  {
     category: "Styling & UI",
     name: "HTML5",
     image: "/skills/html5.svg",
@@ -87,7 +93,20 @@ export const skills: Skill[] = [
     name: "Fetch API",
     image: "/skills/fetch-api.svg",
     darkInvert: true,
-  }, { 
+  }, {
+    category: "API & Data Fetching",
+    name: "JSON",
+    image: "/skills/json.svg",
+    darkInvert: true,
+  },{
+    category: "API & Data Fetching",
+    name: "Node.js",
+    image: "/skills/nodejs.svg",
+  },  {
+    category: "API & Data Fetching",
+    name: "Express.js",
+    image: "/skills/expressjs.svg",
+   }, { 
     category: "API & Data Fetching",
     name: "TanStack Query",
     image: "/skills/tanstack-query.svg",
@@ -95,12 +114,7 @@ export const skills: Skill[] = [
     category: "API & Data Fetching",
     name: "Axios",
     image: "/skills/axios.svg",
-  }, {
-    category: "API & Data Fetching",
-    name: "JSON",
-    image: "/skills/json.svg",
-    darkInvert: true,
-  }, {  
+  },  {  
     category: "Performance & Accessibility",
     name: "Lighthouse",
     image: "/skills/lighthouse.svg",
@@ -213,5 +227,21 @@ export const skills: Skill[] = [
   }, {
     category: "Agile Methodologies",
     name: "Kanban",
-  }
+  },{
+    category: "Soft Skills",
+    name: "Communication",
+  },{
+    category: "Soft Skills",
+    name: "Collaboration",
+  },{
+    category: "Soft Skills",
+    name: "Problem Solving",
+  },{
+    category: "Soft Skills",
+    name: "Adaptability",
+  },{
+    category: "Soft Skills",
+    name: "Growth Mindset",
+  },
+
 ];  

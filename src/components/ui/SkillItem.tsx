@@ -26,7 +26,7 @@ export const SkillItem = ({ name, home, image, darkInvert }: skillItemProps) => 
         ) : null
       ) : (
         image ? (
-            <div className="flex flex-col items-center gap-1 mb-1 mr-3 text-sm text-center max-w-16">
+            <div className="flex flex-col items-center gap-1 mr-3 text-sm text-center max-w-16">
               <Image
                 src={image}
                 alt="" 
