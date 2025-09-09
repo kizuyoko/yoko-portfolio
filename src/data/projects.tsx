@@ -153,6 +153,7 @@ export const projects: Project[] = [
           <li><b>Languages:</b> TypeScript</li>
           <li><b>Styling:</b> Tailwind CSS</li>
           <li><b>Design:</b> Figma</li>
+          <li><b>Animation:</b> Framer Motion</li>
           <li><b>Deployment:</b> Vercel</li>
           <li><b>Performance & SEO:</b> Lighthouse, Wave, Friendly Captcha, Sitemap</li>
           <li><b>CI/CD:</b> GitHub Actions</li>
@@ -160,7 +161,7 @@ export const projects: Project[] = [
         </ul>
       </article>
     ),
-    techStack: ["Next.js", "TypeScript", "TailwindCSS", "React.js", "Figma", "Vercel", "Responsive Design", "Design System", "Dark Mode", "Lighthouse", "Wave", "Friendly Captcha", "WCAG", "sitemap.xml", "robots.txt", "GitHub Actions", "EmailJS"],
+    techStack: ["Next.js", "TypeScript", "TailwindCSS", "React.js", "Figma", "Vercel", "Responsive Design", "Design System", "Dark Mode", "Accessibility", "Performance", "Lighthouse", "Wave", "Friendly Captcha", "WCAG", "sitemap.xml", "robots.txt", "GitHub Actions", "EmailJS", "Framer Motion"],
     image: "portfolio.png",
     demo: "https://yoko-portfolio-kappa.vercel.app/",
     github: "https://github.com/kizuyoko/yoko-portfolio",
