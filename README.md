@@ -56,6 +56,7 @@ Live on Vercel, [View Site](https://yoko-portfolio-kappa.vercel.app/)
 - **Languages**: TypeScript
 - **Styling**: Tailwind CSS
 - **Design**: Figma
+- **Animation**: Framer Motion
 - **Deployment**: Vercel
 - **Performance & SEO**: Lighthouse, Wave, Friendly Captcha, Sitemap
 - **CI/CD**: GitHub Actions

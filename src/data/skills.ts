@@ -53,6 +53,10 @@ export const skills: Skill[] = [
     home: 5,
   }, {
     category: "Styling & UI",
+    name: "Framer Motion",
+    image: "/skills/framer-motion.svg",
+  },{
+    category: "Styling & UI",
     name: "Bootstrap",
     image: "/skills/bootstrap.svg",
   }, {
