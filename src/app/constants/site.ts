@@ -1,7 +1,7 @@
 export const siteConfig = {
   nav: [
-    { name: "Skills", href: "/skills" },
     { name: "Projects", href: "/projects" },
+    { name: "Skills", href: "/skills" },
     { name: "Contact", href: "/contact" },
   ],
 };
