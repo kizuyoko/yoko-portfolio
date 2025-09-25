@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Mono, Sora,  } from 'next/font/google';
 import "./globals.css";
+import Script from "next/script";
 
 const dm_Sans = DM_Sans({
   subsets: ['latin'],
@@ -38,6 +39,24 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+        {/* -- Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-7LXZKDB5JT"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="ga-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-7LXZKDB5JT');
+            `,
+          }}
+        />
       </head>
       <body className="antialiased">
         {children}
