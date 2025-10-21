@@ -37,7 +37,7 @@ export default function HomeContent() {
         ))}
       </div>
     
-      <p>Hello, I&apos;m Yoko — a Frontend developer with nine years of experience, now focused on modern technologies like React, Vue, Next.js, and TypeScript.</p>
+      <p>Hello, I&apos;m Yoko — a Frontend developer with ten years of experience, now focused on modern technologies like React, Vue, Next.js, and TypeScript.</p>
       <p className="py-4">I enjoy working closely with designers and backend engineers, and I thrive in agile environments where collaboration and balance are key.</p>
       <div className="flex flex-col items-center justify-center w-full gap-0 mt-6 sm:gap-4 sm:flex-row">
         {siteConfig.nav
