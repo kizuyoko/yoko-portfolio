@@ -28,16 +28,18 @@ export const projects: Project[] = [
           <li><b>WireFrame:</b> Figma</li>
           <li><b>Deployment:</b> Vercel</li>
           <li><b>Language:</b> TypeScript</li>
+          <li><b>Backend:</b> Express.js</li>
           <li><b>Styling:</b> Tailwind CSS</li>
           <li><b>State Management:</b> Redux Toolkit</li>
           <li><b>API Requests:</b> Axios, TanStack Query</li>
           <li><b>Component Documentation:</b> Storybook</li>
-          <li><b>Testing:</b> Jest (unit testing)</li>
+          <li><b>Testing:</b> Jest (unit testing), Cypress (E2E)</li>
+          <li><b>CI/CD:</b> GitHub Actions</li>
           <li><b>Performance Testing, Accessibility:</b> Lighthouse, Wave</li>
         </ul>
       </article>
     ),
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Axios", "Jest", "Storybook", "React.js", "Figma", "Vercel", "Redux", "Tanstack Query", "Lighthouse", "Wave", "Responsive Design", "API"],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Axios", "Tanstack Query", "Express.js", "Jest", "Cypress", "GitHub Actions", "Storybook", "React.js", "Figma", "Vercel", "Redux", "Lighthouse", "Wave", "Responsive Design", "API"],
     image: "pokecheck.png",
     demo: "https://pokecheck-two.vercel.app/",
     github: "https://github.com/kizuyoko/pokecheck",
