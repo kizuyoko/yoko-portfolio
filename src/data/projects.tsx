@@ -45,6 +45,51 @@ export const projects: Project[] = [
     github: "https://github.com/kizuyoko/pokecheck",
     topProject: true,
   }, {
+    title: "ABetterUX",
+    description: (
+      <article className="project-description">
+
+    <p>
+      <strong>
+        A high-performance, accessibility-focused multi-language UX agency website built with a scalable, framework-free architecture.
+      </strong>
+    </p>
+
+    <h2>Overview</h2>
+    <p>
+      ABetterUX is a responsive UX agency website with multi-language support (Swedish/English).<br />
+      I designed and developed the site using semantic HTML, CSS, and Vanilla JavaScript, focusing on usability, accessibility, and maintainable architecture.
+    </p>
+
+    <h2>Purpose</h2>
+    <p>The goal of this project was to create a corporate UX agency website that prioritizes:</p>
+    <ul>
+      <li>Clear information hierarchy and intuitive navigation</li>
+      <li>Accessibility (WCAG-conscious structure)</li>
+      <li>High performance across devices</li>
+      <li>Scalable and maintainable architecture</li>
+      <li>Smooth and engaging user experience</li>
+    </ul>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Multi-language support (Swedish/English) with a custom path-mapping system for seamless navigation</li>
+      <li>Semantic HTML and structured content to improve accessibility and SEO</li>
+      <li>Mobile-first responsive design across all screen sizes</li>
+      <li>High performance with Lighthouse scores consistently between 90–100</li>
+      <li>Interactive UI elements and animations implemented in Vanilla JavaScript</li>
+      <li>Reusable component architecture (header, footer, booking) for easier maintenance</li>
+      <li>Lightweight implementation without frameworks or build tools</li>
+    </ul>
+
+  </article>
+    ),
+    techStack: ["HTML5", "CSS3", "JavaScript(ES6+)", "GitHub", "Figma", "Vercel", "Lighthouse", "Wave", "Responsive Design"],
+    image: "abetterux.png",
+    demo: "https://abetterux-static.vercel.app/",
+    github: "https://github.com/kizuyoko/abetterux_static",
+    topProject: true,
+  }, {
     title: "Quick Invoice",
     description: (
       <article className="project-description">

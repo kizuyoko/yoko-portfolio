@@ -270,6 +270,15 @@ export const skills: Skill[] = [
   },{
     category: "Soft Skills",
     name: "Growth Mindset",
+  },{
+    category: "Frontend Development",
+    name: "SolidJS",
+    image: "/skills/solidjs.svg",
+    darkInvert: true,
+  },{
+    category: "CMS & CRM",
+    name: "Webflow",
+    image: "/skills/webflow.png",
   },
 
 ];  
