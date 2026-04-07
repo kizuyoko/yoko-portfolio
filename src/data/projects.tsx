@@ -45,51 +45,6 @@ export const projects: Project[] = [
     github: "https://github.com/kizuyoko/pokecheck",
     topProject: true,
   }, {
-    title: "ABetterUX",
-    description: (
-      <article className="project-description">
-
-    <p>
-      <strong>
-        A high-performance, accessibility-focused multi-language UX agency website built with a scalable, framework-free architecture.
-      </strong>
-    </p>
-
-    <h2>Overview</h2>
-    <p>
-      ABetterUX is a responsive UX agency website with multi-language support (Swedish/English).<br />
-      I designed and developed the site using semantic HTML, CSS, and Vanilla JavaScript, focusing on usability, accessibility, and maintainable architecture.
-    </p>
-
-    <h2>Purpose</h2>
-    <p>The goal of this project was to create a corporate UX agency website that prioritizes:</p>
-    <ul>
-      <li>Clear information hierarchy and intuitive navigation</li>
-      <li>Accessibility (WCAG-conscious structure)</li>
-      <li>High performance across devices</li>
-      <li>Scalable and maintainable architecture</li>
-      <li>Smooth and engaging user experience</li>
-    </ul>
-
-    <h2>Features</h2>
-    <ul>
-      <li>Multi-language support (Swedish/English) with a custom path-mapping system for seamless navigation</li>
-      <li>Semantic HTML and structured content to improve accessibility and SEO</li>
-      <li>Mobile-first responsive design across all screen sizes</li>
-      <li>High performance with Lighthouse scores consistently between 90–100</li>
-      <li>Interactive UI elements and animations implemented in Vanilla JavaScript</li>
-      <li>Reusable component architecture (header, footer, booking) for easier maintenance</li>
-      <li>Lightweight implementation without frameworks or build tools</li>
-    </ul>
-
-  </article>
-    ),
-    techStack: ["HTML5", "CSS3", "JavaScript(ES6+)", "GitHub", "Figma", "Vercel", "Lighthouse", "Wave", "Responsive Design"],
-    image: "abetterux.png",
-    demo: "https://abetterux-static.vercel.app/",
-    github: "https://github.com/kizuyoko/abetterux_static",
-    topProject: true,
-  }, {
     title: "Quick Invoice",
     description: (
       <article className="project-description">
@@ -146,6 +101,51 @@ export const projects: Project[] = [
     image: "quickinvoice.png",
     demo: 'https://quick-invoice-eight.vercel.app',
     github: 'https://github.com/kizuyoko/quick-invoice',
+    topProject: true,
+  }, {
+    title: "ABetterUX",
+    description: (
+      <article className="project-description">
+
+    <p>
+      <strong>
+        A high-performance, accessibility-focused multi-language UX agency website built with a scalable, framework-free architecture.
+      </strong>
+    </p>
+
+    <h2>Overview</h2>
+    <p>
+      ABetterUX is a responsive UX agency website with multi-language support (Swedish/English).<br />
+      I designed and developed the site using semantic HTML, CSS, and Vanilla JavaScript, focusing on usability, accessibility, and maintainable architecture.
+    </p>
+
+    <h2>Purpose</h2>
+    <p>The goal of this project was to create a corporate UX agency website that prioritizes:</p>
+    <ul>
+      <li>Clear information hierarchy and intuitive navigation</li>
+      <li>Accessibility (WCAG-conscious structure)</li>
+      <li>High performance across devices</li>
+      <li>Scalable and maintainable architecture</li>
+      <li>Smooth and engaging user experience</li>
+    </ul>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Multi-language support (Swedish/English) with a custom path-mapping system for seamless navigation</li>
+      <li>Semantic HTML and structured content to improve accessibility and SEO</li>
+      <li>Mobile-first responsive design across all screen sizes</li>
+      <li>High performance with Lighthouse scores consistently between 90–100</li>
+      <li>Interactive UI elements and animations implemented in Vanilla JavaScript</li>
+      <li>Reusable component architecture (header, footer, booking) for easier maintenance</li>
+      <li>Lightweight implementation without frameworks or build tools</li>
+    </ul>
+
+  </article>
+    ),
+    techStack: ["HTML5", "CSS3", "JavaScript(ES6+)", "GitHub", "Figma", "Vercel", "Lighthouse", "Wave", "Responsive Design"],
+    image: "abetterux.png",
+    demo: "https://abetterux-static.vercel.app/",
+    github: "https://github.com/kizuyoko/abetterux_static",
     topProject: true,
   },{
     title: "Portfolio",
@@ -216,7 +216,9 @@ export const projects: Project[] = [
   },{
     title: 'Quick Reddit',
     image: 'quickreddit.png',
-    description: (
+    description: 'Quick Reddit is a fast and intuitive web application that allows users to explore trending Reddit posts effortlessly. Built with Next.js, the app is optimized for SEO and performance while maintaining a clean, responsive design. It integrates the Reddit API for real-time data, enabling users to browse posts by category, search for topics, and vote on posts.',
+    /*
+    (
       <article className="project-description">
         <h2>Overview</h2>
         <p>Quick Reddit is a fast and intuitive web application that allows users to explore trending Reddit posts effortlessly. Built with Next.js, the app is optimized for SEO and performance while maintaining a clean, responsive design. It integrates the Reddit API for real-time data, enabling users to browse posts by category, search for topics, and vote on posts.</p>
@@ -241,14 +243,16 @@ export const projects: Project[] = [
           <li><b>Responsive Design</b> - For all devices, Dark mode adjustment</li>
         </ul>
       </article>
-    ),
+    ),*/
     techStack: ['Next.js', 'React.js', 'TypeScript', 'Redux', 'Jest and RTL', 'Lighthouse' , 'Reddit API', 'Figma', 'Tailwind'],
     demo: 'https://quickreddit.vercel.app',
     github: 'https://github.com/kizuyoko/quickreddit',
-    topProject: true,
+    topProject: false,
   },{
     title: "Inspiration Hub",
-    description: (
+    description: "An app designed to inspire and motivate daily. It allows users to set daily goals with status tracking and automatic sorting for better organization. The app also displays local weather, a random inspirational quote, and a stunning background image to spark creativity and positivity.",
+    /*
+    (
       <article className="project-description">
         <h2>Overview</h2>
         <p>
@@ -265,11 +269,12 @@ export const projects: Project[] = [
         </ul>
       </article>
     ),
+    */
     techStack:  ['React.js', 'TypeScript', 'Vite', 'Redux', 'API (Open Weather, Unsplash, Quote by DummyJSON)', 'Figma', 'Tailwind' ],
     image: "inspiration-hub.png",
     demo: 'https://inspiration-hub-three.vercel.app/',
     github: 'https://github.com/kizuyoko/inspiration-hub',
-    topProject: true,
+    topProject: false,
   },{
     title: 'React TypeScript Music',
     image: 'react_typescript_music.png',
