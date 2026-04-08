@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://boilerplate-react-nextjs-typescript.vercel.app
+
+# Sitemaps
+Sitemap: https://boilerplate-react-nextjs-typescript.vercel.app/sitemap.xml
