@@ -1,6 +1,68 @@
 import type { Project } from "../types/project";
 
 export const projects: Project[] = [
+{
+  title: "Sevaxa",
+  description: (
+    <article className="project-description">
+      <h2>Overview</h2>
+      <p>
+        Sevaxa is a healthcare incident reporting platform that helps users
+        create, view, and manage incident reports. The platform consists of
+        two frontend applications, Sevaxa Frontend and Sevaxa Incident, which
+        share a common component library and backend services. Access to
+        features and actions is controlled by user roles and feature
+        configuration.
+      </p>
+      <p> <i>This is a private company project, so the source code is not publicly available. Further details about my contributions can be provided upon request.</i> </p>
+
+      <h2>My Contributions</h2>
+      <p>
+        As a Frontend Developer at Wacoco, I contribute to the development
+        and maintenance of the Sevaxa applications and their shared React
+        component library. My work includes building and refactoring reusable
+        UI components, developing forms and validation logic, and integrating
+        APIs.
+      </p>
+
+      <h2>Features</h2>
+      <ul>
+        <li><b>Incident Creation:</b> Create and submit healthcare incident reports.</li>
+        <li><b>Incident Overview:</b> View incident reports in a list.</li>
+        <li><b>Incident Details:</b> View detailed information about individual incidents.</li>
+        <li><b>Incident Updates:</b> Edit and update existing incident reports.</li>
+        <li><b>Role-Based Access:</b> Control access to functionality based on user roles and permissions.</li>
+        <li><b>Feature Configuration:</b> Control feature availability through application configuration.</li>
+        <li><b>Shared Component Library:</b> Reuse UI components across both frontend applications.</li>
+        <li><b>Forms and Validation:</b> Support data entry and validation in incident reporting workflows.</li>
+      </ul>
+
+      <h2>Tech Stack</h2>
+      <ul>
+        <li><b>Frontend:</b> React.js</li>
+        <li><b>Language:</b> JavaScript</li>
+        <li><b>Build Tool:</b> Vite</li>
+        <li><b>Component Development and Documentation:</b> Storybook</li>
+        <li><b>API Integration:</b> REST APIs</li>
+        <li><b>Architecture:</b> Shared Component Library and Backend Services</li>
+      </ul>
+    </article>
+  ),
+  techStack: [
+    "React.js",
+    "JavaScript",
+    "Vite",
+    "Storybook",
+    "REST APIs",
+    "Component Library",
+    "Form Validation",
+  ],
+  image: "sevaxa.png",
+  demo: "https://sevaxa.se",
+  github: "",
+  topProject: true,
+}
+,
   {
     title: "PokeCheck",
     description: (
